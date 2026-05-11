@@ -30,7 +30,7 @@ export const mockExamQuestionsPythonOptativo = [
   q(22, "¿Qué salida produce el siguiente código?\nclass Persona:\n    def __init__(self, nombre):\n        self.nombre = nombre\n\np = Persona(\"Ana\")\nprint(p.nombre)", ["Error", "None", "Persona", "\"Ana\""], 3),
   q(23, "¿Qué representa una clase en programación orientada a objetos?", ["Un dato", "Una función", "Una función avanzada", "Una plantilla"], 3),
   q(24, "¿Qué es un objeto?", ["Una función", "Una instancia de una clase", "Un tipo de dato", "Un archivo"], 1),
-  q(25, "¿Qué se imprime por pantalla?\nclass Animal:\n    def hablar(self):\n        return \"Sonido\"\n\nclass Perro(Animal):\n    pass\n\np = Perro()\nprint(p.hablar())", ["Error", "None", "\"Sonido\"", "\"Perro\""], 2),
+  q(25, "¿Qué salida produce el siguiente código?\nclass Animal:\n    def hablar(self):\n        return \"Sonido\"\n\nclass Perro(Animal):\n    pass\n\np = Perro()\nprint(p.hablar())", ["Error", "None", "Sonido", "\"Perro\""], 2),
   q(26, "¿Qué concepto permite ocultar los detalles internos de una clase?", ["Herencia", "Polimorfismo", "No se pueden ocultar los detalles internos de una clase", "Encapsulación"], 3),
   q(27, "¿Qué permite la herencia?", ["Repetir código", "Crear funciones", "Reutilizar código entre clases", "Ninguna de las anteriores"], 2),
   q(28, "¿Qué es el polimorfismo?", ["Diferentes objetos responden al mismo método de forma distinta", "Capacidad de un objeto de cambiar su valor", "Crear múltiples funciones", "Crear múltiples clases"], 0),

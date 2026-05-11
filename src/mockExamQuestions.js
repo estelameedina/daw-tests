@@ -679,6 +679,193 @@ export const mockExamQuestionsByModule = {
       text: "¿Qué técnica se utiliza para analizar la usabilidad observando dónde hacen clic o se desplazan más los usuarios?",
       options: ["Mapa de navegación.", "Mapa de calor.", "Hoja de estilos externa.", "Formato vectorial."],
       correct: "Mapa de calor."
+    },
+    {
+      id: "sim-diseno-interfaces-27",
+      text: "¿Qué opción representa mejor una buena interpretación de una guía de estilo en un proyecto web?",
+      options: [
+        "Aplicar colores, tipografías, espaciados y componentes de forma coherente en todas las páginas.",
+        "Usar una fuente distinta en cada sección para diferenciar visualmente el contenido.",
+        "Cambiar el diseño de botones según el gusto de cada desarrollador.",
+        "Evitar documentar los estilos para no limitar la creatividad del equipo."
+      ],
+      correct: "Aplicar colores, tipografías, espaciados y componentes de forma coherente en todas las páginas."
+    },
+    {
+      id: "sim-diseno-interfaces-28",
+      text: "En una interfaz web, ¿qué consecuencia puede tener una mala jerarquía visual?",
+      options: [
+        "Que el usuario identifique más rápido los elementos importantes.",
+        "Que todos los elementos tengan el mismo nivel de importancia y el usuario no sepa dónde dirigir la atención.",
+        "Que la página cargue más rápido al tener menos estructura visual.",
+        "Que el navegador aplique automáticamente mejores estilos."
+      ],
+      correct: "Que todos los elementos tengan el mismo nivel de importancia y el usuario no sepa dónde dirigir la atención."
+    },
+    {
+      id: "sim-diseno-interfaces-29",
+      text: "¿Cuál de las siguientes opciones representa mejor el concepto de consistencia en una interfaz gráfica?",
+      options: [
+        "Cambiar el diseño de los botones en cada página para evitar monotonía.",
+        "Mantener patrones visuales y de interacción similares para funciones equivalentes.",
+        "Usar siempre el mismo color para todos los elementos, aunque tengan funciones distintas.",
+        "Eliminar iconos para que toda la interfaz dependa solo del texto."
+      ],
+      correct: "Mantener patrones visuales y de interacción similares para funciones equivalentes."
+    },
+    {
+      id: "sim-diseno-interfaces-30",
+      text: "¿Qué elemento sería más importante en la fase de planificación de una interfaz antes de empezar a programar?",
+      options: [
+        "Definir la estructura de navegación, los objetivos de la web y el tipo de usuario al que va dirigida.",
+        "Elegir únicamente los colores finales de la página.",
+        "Programar primero todas las animaciones.",
+        "Publicar la web para comprobar después si funciona."
+      ],
+      correct: "Definir la estructura de navegación, los objetivos de la web y el tipo de usuario al que va dirigida."
+    },
+    {
+      id: "sim-diseno-interfaces-31",
+      text: "En CSS, ¿qué problema puede aparecer si se abusa de los estilos inline?",
+      options: [
+        "Que el HTML queda más limpio y reutilizable.",
+        "Que se dificulta el mantenimiento y se rompe la separación entre contenido y presentación.",
+        "Que no se pueden aplicar colores al texto.",
+        "Que los selectores de clase dejan de existir."
+      ],
+      correct: "Que se dificulta el mantenimiento y se rompe la separación entre contenido y presentación."
+    },
+    {
+      id: "sim-diseno-interfaces-32",
+      text: "¿Cuál de las siguientes reglas CSS está correctamente estructurada?",
+      options: [
+        "color: red; h1 { font-size }",
+        "h1 { color: red; font-size: 24px; }",
+        "{ h1: color red; font-size 24px }",
+        "h1 = color red, font-size 24px"
+      ],
+      correct: "h1 { color: red; font-size: 24px; }"
+    },
+    {
+      id: "sim-diseno-interfaces-33",
+      text: "Si se quiere aplicar un mismo estilo a todos los párrafos y a todos los encabezados de nivel 2, ¿qué técnica CSS sería más adecuada?",
+      options: [
+        "Usar agrupación de selectores.",
+        "Usar obligatoriamente estilos inline.",
+        "Crear un identificador distinto para cada elemento.",
+        "Insertar el CSS dentro de cada etiqueta HTML."
+      ],
+      correct: "Usar agrupación de selectores."
+    },
+    {
+      id: "sim-diseno-interfaces-34",
+      text: "¿Cuál de las siguientes opciones describe mejor la función de la propiedad display: none en CSS?",
+      options: [
+        "Hace que el elemento sea visible, pero transparente.",
+        "Oculta el elemento y además elimina el espacio que ocupaba en la página.",
+        "Cambia el color de fondo del elemento.",
+        "Convierte un elemento en imagen vectorial."
+      ],
+      correct: "Oculta el elemento y además elimina el espacio que ocupaba en la página."
+    },
+    {
+      id: "sim-diseno-interfaces-35",
+      text: "En el uso de imágenes para la web, ¿qué afirmación es más correcta?",
+      options: [
+        "Las imágenes de mapa de bits son ideales para logotipos que deben escalarse indefinidamente sin perder calidad.",
+        "Las imágenes vectoriales se basan en fórmulas o trazados, por lo que pueden escalarse sin pérdida apreciable de calidad.",
+        "Los archivos JPEG siempre conservan transparencias.",
+        "Los GIF son el formato más adecuado para fotografías de alta calidad."
+      ],
+      correct: "Las imágenes vectoriales se basan en fórmulas o trazados, por lo que pueden escalarse sin pérdida apreciable de calidad."
+    },
+    {
+      id: "sim-diseno-interfaces-36",
+      text: "¿Qué práctica es más adecuada al insertar audio o vídeo en una página web?",
+      options: [
+        "Iniciar siempre la reproducción automática con volumen alto.",
+        "Ofrecer controles al usuario y optimizar el archivo para no perjudicar la carga de la página.",
+        "Usar siempre el formato más pesado para conservar calidad máxima.",
+        "Evitar cualquier información textual relacionada con el contenido multimedia."
+      ],
+      correct: "Ofrecer controles al usuario y optimizar el archivo para no perjudicar la carga de la página."
+    },
+    {
+      id: "sim-diseno-interfaces-37",
+      text: "Desde el punto de vista legal, ¿cuál es la conducta más correcta al usar una imagen encontrada en Internet?",
+      options: [
+        "Usarla libremente si aparece en Google Imágenes.",
+        "Usarla solo si no tiene marca de agua.",
+        "Comprobar su licencia, autoría y condiciones de uso antes de incorporarla al proyecto.",
+        "Descargarla, modificarle el tamaño y considerarla propia."
+      ],
+      correct: "Comprobar su licencia, autoría y condiciones de uso antes de incorporarla al proyecto."
+    },
+    {
+      id: "sim-diseno-interfaces-38",
+      text: "¿Qué diferencia principal existe entre un evento y una acción en una interfaz interactiva?",
+      options: [
+        "El evento es lo que ocurre, como un clic o una pulsación de tecla; la acción es la respuesta que ejecuta el sistema.",
+        "La acción ocurre antes del evento.",
+        "Los eventos solo existen en CSS y las acciones solo en HTML.",
+        "Evento y acción son exactamente lo mismo."
+      ],
+      correct: "El evento es lo que ocurre, como un clic o una pulsación de tecla; la acción es la respuesta que ejecuta el sistema."
+    },
+    {
+      id: "sim-diseno-interfaces-39",
+      text: "Un menú desplegable que aparece al pulsar un botón es un ejemplo de:",
+      options: [
+        "Contenido estático sin interacción.",
+        "Elemento interactivo que responde a una acción del usuario.",
+        "Formato multimedia de vídeo.",
+        "Validación de accesibilidad automática."
+      ],
+      correct: "Elemento interactivo que responde a una acción del usuario."
+    },
+    {
+      id: "sim-diseno-interfaces-40",
+      text: "¿Cuál de las siguientes situaciones justificaría mejor el uso de JavaScript en una página web?",
+      options: [
+        "Cambiar únicamente el color de fondo de todos los párrafos.",
+        "Validar un formulario en tiempo real antes de enviarlo.",
+        "Definir la estructura básica de encabezados y párrafos.",
+        "Escribir el texto alternativo de una imagen."
+      ],
+      correct: "Validar un formulario en tiempo real antes de enviarlo."
+    },
+    {
+      id: "sim-diseno-interfaces-41",
+      text: "¿Cuál de las siguientes opciones se relaciona directamente con el principio de accesibilidad \"perceptible\" de las WCAG?",
+      options: [
+        "Que el usuario pueda acceder a la información mediante diferentes formas, como texto alternativo en imágenes.",
+        "Que la página solo funcione con ratón.",
+        "Que el sitio tenga muchas animaciones decorativas.",
+        "Que todos los enlaces se abran en una ventana nueva."
+      ],
+      correct: "Que el usuario pueda acceder a la información mediante diferentes formas, como texto alternativo en imágenes."
+    },
+    {
+      id: "sim-diseno-interfaces-42",
+      text: "En accesibilidad web, ¿por qué es importante comprobar una página con navegación mediante teclado?",
+      options: [
+        "Porque algunos usuarios no utilizan ratón y necesitan acceder a todos los elementos interactivos con el teclado.",
+        "Porque así se mejora automáticamente la velocidad de conexión.",
+        "Porque sustituye la necesidad de usar etiquetas HTML semánticas.",
+        "Porque los navegadores eliminan los errores de CSS."
+      ],
+      correct: "Porque algunos usuarios no utilizan ratón y necesitan acceder a todos los elementos interactivos con el teclado."
+    },
+    {
+      id: "sim-diseno-interfaces-43",
+      text: "Una web con textos pequeños, bajo contraste, menús poco claros y tiempos de carga elevados presenta principalmente problemas de:",
+      options: [
+        "Licenciamiento de software.",
+        "Usabilidad y accesibilidad.",
+        "Propiedad industrial.",
+        "Conversión de formatos multimedia."
+      ],
+      correct: "Usabilidad y accesibilidad."
     }
   ],
   "python-optativo": mockExamQuestionsPythonOptativo,
