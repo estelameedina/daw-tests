@@ -1,5 +1,6 @@
 import { mockExamQuestionsCliente } from "./mockExamQuestionsCliente";
 import { mockExamQuestionsInglesProfesional } from "./mockExamQuestionsInglesProfesional";
+import { mockExamQuestionsPythonOptativo } from "./mockExamQuestionsPythonOptativo";
 
 // Anade aqui las preguntas de simulacro que os hayan dado los profes.
 // Solo aparecera el boton "Simulacro de examen" en los modulos que tengan
@@ -499,6 +500,7 @@ export const mockExamQuestionsByModule = {
       correct: "Mapa de calor."
     }
   ],
+  "python-optativo": mockExamQuestionsPythonOptativo,
   "empleabilidad-ii": [
     {
       id: "sim-empleabilidad-1",
