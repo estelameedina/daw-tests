@@ -1,0 +1,345 @@
+¿Cuál de los siguientes es un tipo de dato numérico en Python?
+		 str   
+		 int  
+		 bool   
+¿Cuál es el resultado de la expresión 3 + 4 * 2 en Python?
+		 14   
+		 11  
+		 10   
+¿Cuál es la diferencia entre una variable y una constante?
+		 Las constantes cambian de valor, las variables no   
+		 Las constantes no cambian su valor durante la ejecución  
+		 Las variables son siempre números   
+¿Cuál es la estructura básica de un programa en Python?
+		 Un bucle while, una función y un diccionario   
+		 Un conjunto de instrucciones ordenadas lógicamente  
+		 Un archivo HTML con etiquetas <script>   
+¿Cuál es la forma correcta de escribir un comentario en Python?
+		 /* Esto es un comentario */   
+		 # Esto es un comentario  
+		 ``   
+¿Cuál es la función incorporada para convertir una cadena en un número entero?
+		 float()   
+		 int()  
+		 str()   
+¿Qué afirmación es correcta sobre las variables en Python?
+		 Deben declararse con un tipo de dato explícito   
+		 Se crean automáticamente al asignarles un valor  
+		 Solo pueden contener números   
+¿Qué es un literal en Python?
+		 Un comentario escrito entre comillas dobles   
+		 Una constante que se puede modificar   
+		 Un valor constante escrito directamente en el código  
+¿Qué operador se usa para realizar una multiplicación en Python?
+		 %   
+		 *  
+		 //   
+¿Qué tipo de conversión se realiza al hacer str(123)?
+		 De cadena a entero   
+		 De entero a cadena  
+		 De flotante a entero   
+¿Qué sucede si se produce una excepción y no se maneja con try-except?
+		 El programa continúa normalmente   
+		 El programa muestra un mensaje de error y se detiene  
+		 La excepción se ignora   
+¿Cuál es el propósito de una cláusula else en una estructura if?
+		 Ejecutar código cuando la condición no se cumple  
+		 Verificar una excepción   
+		 Finalizar un bucle   
+¿Qué estructura se debe usar para manejar errores en tiempo de ejecución de manera segura?
+		 if-else   
+		 try-except  
+		 for-else   
+¿Qué hace la sentencia continue en un bucle?
+		 Finaliza el bucle   
+		 Salta la iteración actual y continúa con la siguiente  
+		 Reinicia el bucle desde el principio   
+¿Qué palabra clave se utiliza para capturar una excepción en Python?
+		 throw   
+		 capture   
+		 except  
+¿Cuál de las siguientes estructuras permite repetir un bloque de código un número determinado de veces?
+		 for  
+		 if   
+		 break   
+¿Qué instrucción se usa para tomar decisiones condicionales en Python?
+		 for   
+		 if  
+		 try   
+¿Qué resultado devuelve la expresión if 5 > 3: en Python?
+		 Ejecuta el bloque si se cumple la condición  
+		 Siempre devuelve False   
+		 Termina el programa   
+¿Qué tipo de estructura es while en Python?
+		 Selección   
+		 Repetición  
+		 Salto   
+¿Cuál es la función de la instrucción break en un bucle?
+		 Detener la ejecución completa del programa   
+		 Finalizar el bucle actual y continuar después de él  
+		 Saltar una iteración específica del bucle   
+¿Qué error común puede producirse al usar recursión sin una condición adecuada?
+		 TypeError   
+		 SyntaxError   
+		 RecursionError  
+¿Por qué es importante tener una condición de parada en una función recursiva?
+		 Para hacer el código más legible   
+		 Para evitar una recursión infinita  
+		 Para usar menos memoria   
+¿Cuál es el propósito del parámetro *args en una función?
+		 Permitir pasar un número variable de argumentos  
+		 Crear una lista automáticamente   
+		 Declarar una función recursiva   
+¿Qué palabra clave se utiliza para que una función retorne un valor?
+		 yield   
+		 return  
+		 output   
+¿Qué imprime el siguiente código? def suma(a, b=2): return a + b; print(suma(3))
+		 Error por falta de argumentos   
+		 5  
+		 6   
+¿Qué sucede si una función no incluye una sentencia return?
+		 La función genera un error   
+		 La función retorna False   
+		 La función retorna None  
+¿Cuál es la principal ventaja de usar funciones en un programa?
+		 Facilitan la reutilización y organización del código  
+		 Permiten evitar el uso de bucles   
+		 Reemplazan las estructuras condicionales   
+¿Cuál de las siguientes opciones representa una llamada recursiva correcta?
+		 def factorial(n): return 1 if n == 0 else n * factorial(n - 1)  
+		 def factorial(n): return n * n - 1   
+		 def factorial(n): return factorial(n + 1)   
+En la recursión, ¿qué ocurre con cada llamada de función?
+		 Se sobrescribe la función anterior   
+		 Se ejecuta en paralelo con las demás   
+		 Se agrega una nueva capa al stack de ejecución  
+¿Cuál es la forma correcta de definir una función en Python?
+		 function mi_funcion()   
+		 def mi_funcion()  
+		 define mi_funcion()   
+¿Qué devuelve len(tupla) si tupla = (10, 20, 30, 40)?
+		 3   
+		 4  
+		 5   
+¿Cuál es una característica de las tuplas en Python?
+		 Son modificables   
+		 Son inmutables  
+		 Solo pueden contener números   
+¿Qué método de las cadenas devuelve una copia de la cadena con todos los caracteres en minúsculas?
+		 upper()   
+		 lower()  
+		 capitalize()   
+¿Cómo se accede al tercer elemento de una lista llamada frutas?
+		 frutas[3]   
+		 frutas[2]  
+		 frutas(2)   
+¿Cómo se accede al valor asociado a una clave en un diccionario llamado alumno?
+		 alumno.clave   
+		 alumno['clave']  
+		 alumno(clave)   
+¿Qué método de las cadenas divide una cadena en una lista usando un separador?
+		 split()  
+		 join()   
+		 replace()   
+¿Qué método reemplaza una subcadena por otra en una cadena?
+		 split()   
+		 find()   
+		 replace()  
+¿Qué instrucción añade un elemento al final de una lista?
+		 append(elemento)  
+		 insert(elemento)   
+		 add(elemento)   
+¿Cuál es la sintaxis correcta para crear un diccionario vacío?
+		 diccionario = []   
+		 diccionario = ()   
+		 diccionario = {}  
+¿Qué función convierte una tupla en una lista?
+		 list()  
+		 tuple()   
+		 set()   
+¿Qué hace la función open('datos.txt', 'w') en Python?
+		 Abre el fichero solo para lectura   
+		 Abre el fichero para añadir datos   
+		 Abre el fichero para escritura y borra su contenido si existe  
+¿Qué módulo de Python es necesario importar para trabajar con ficheros y directorios?
+		 file   
+		 os  
+		 sys   
+¿Cuál de las siguientes funciones se emplea para mostrar información en pantalla?
+		 print()  
+		 output()   
+		 echo()   
+¿Qué se necesita hacer siempre después de terminar de trabajar con un fichero en Python?
+		 Llamar a flush()   
+		 Llamar a close()  
+		 Llamar a delete()   
+¿Qué modo de apertura de fichero permite leer y escribir sin borrar el contenido existente?
+		 'w'   
+		 'r+'  
+		 'a'   
+¿Qué función se utiliza en Python para leer datos introducidos por el usuario desde el teclado?
+		 print()   
+		 read()   
+		 input()  
+¿Cuál de las siguientes opciones permite crear un nuevo directorio desde Python?
+		 os.create()   
+		 os.mkdir()  
+		 os.makedir()   
+¿Cuál es la extensión más común para un fichero de texto plano en Python?
+		 .exe   
+		 .txt  
+		 .csv   
+¿Cuál de las siguientes estructuras sería la más adecuada para representar un registro de datos personales?
+		 Lista de strings   
+		 Diccionario  
+		 Cadena de texto   
+¿Qué función permite eliminar un fichero del sistema de archivos en Python?
+		 os.remove()  
+		 os.delete()   
+		 os.unlink()   
+¿Cuál es una ventaja del polimorfismo?
+		 Aumenta el acoplamiento entre clases   
+		 Facilita la extensión del código sin modificarlo  
+		 Restringe el uso de interfaces   
+¿Qué palabra clave se utiliza comúnmente para acceder a la superclase en muchos lenguajes POO?
+		 base   
+		 superclass   
+		 super  
+¿Qué principio de la POO se refiere a ocultar los detalles internos de un objeto?
+		 Herencia   
+		 Encapsulación  
+		 Polimorfismo   
+¿Cuál es el objetivo principal de la encapsulación?
+		 Permitir múltiples formas de una función   
+		 Reutilizar código   
+		 Proteger los datos del acceso directo  
+¿Qué se hereda en una relación de herencia?
+		 Solo los métodos públicos   
+		 Atributos y métodos de la clase base  
+		 Solo los atributos   
+¿Cuál es el resultado de utilizar correctamente la herencia?
+		 Redundancia de código   
+		 Código más difícil de mantener   
+		 Reutilización y organización eficiente del código  
+¿Qué significa que un método esté “sobrescrito” (override) en una subclase?
+		 Que se elimina el método de la superclase   
+		 Que el método de la subclase reemplaza al de la superclase  
+		 Que se crean dos versiones del método con diferente nombre   
+¿Qué significa que una clase esté encapsulada?
+		 Sus atributos y métodos son visibles desde cualquier parte   
+		 Sus atributos están protegidos y solo accesibles mediante métodos  
+		 No puede ser heredada   
+¿Cuál de las siguientes opciones representa una forma de polimorfismo?
+		 Sobrecarga de métodos  
+		 Declaración de variables   
+		 Herencia múltiple   
+¿Qué mecanismo permite que una clase derive de otra clase?
+		 Abstracción   
+		 Herencia  
+		 Encapsulación   
+1. ¿Cuál es el resultado del siguiente código? 
+a) "55" b) 10 c) Error d) 5 
+2. ¿Qué tipo de dato devuelve la función input() en Python? 
+a) int b) float c) str d) bool 
+3. ¿Qué salida produce el siguiente código? 
+x=5 y = "5" print(x + int(y)) 
+contador = 0
+while contador < 3:
+  contador += 1
+  if contador == 2:
+continue 
+  print(contador)
+a) 1 2 3 b) 1 3 c) 2 3 d) 1 2 
+4. ¿Qué salida produce el siguiente código? 
+x=7 if x > 10: 
+  print("A")
+elif x > 5:
+  print("B")
+else:
+print("C") 
+a) A b) B c) C d) No imprime nada 
+5. ¿Cuál es el resultado? 
+a) 1 2 3 b) 0 1 2 c) 0 1 2 3 d) Error 
+6. ¿Qué salida produce el siguiente código? 
+for i in range(3):
+  print(i)
+for i in range(5):
+  if i == 3:
+break 
+  print(i)
+else:
+  print("Fin")
+a) 0 1 2 3 Fin b) 0 1 2 
+c) 0 1 2 Fin d) 0 1 2 3 
+7. ¿Cuál es la salida? 
+x = 10 if x > 5: 
+  print("A")
+elif x > 8:
+print("B") 
+a) A b) B c) A y B d) Nada 
+8. ¿Cuál es el resultado de "Hola"[1]? 
+a) H b) o c) l d) a 
+9. ¿Qué devuelve len("Python")? 
+a) 5 b) 6 c) 7 d) Error 
+10. ¿Cuál de las siguientes estructuras es mutable? 
+a) tupla b) string c) lista d) int 
+11. ¿Qué método añade un elemento al final de una lista? 
+a) add() b) append() c) insert() d) push() 
+12. ¿Cuál es la salida? 
+a) [1, 2, 3] b) [4, 1, 2, 3] c) [1, 2, 3, 4] d) Error 
+13. ¿Qué característica tienen las tuplas? 
+a) Son mutables b) Son inmutables c) Son listas ordenadas d) No almacenan datos 
+14. ¿Cómo se accede al valor asociado a una clave en un diccionario? 
+a) dict.clave b) dict(clave) c) dict[clave] d) get(dict) 
+15. ¿Qué sucede si se accede a una clave inexistente en un diccionario usando []? 
+a) Devuelve None b) Devuelve 0 c) Ignora la instrucción d) Error 
+lista = [1, 2, 3]
+lista.append(4)
+print(lista)
+16. ¿Qué función se utiliza para abrir un archivo? 
+a) open() b) file() c) read() d) load() 
+17. ¿Qué modo abre un archivo para escritura sobrescribiendo su contenido? 
+a) w b) a c) r d) x 
+18. ¿Cuál es la ventaja principal de usar with open(...)? 
+a) Mejora la velocidad b) Cierra automáticamente el archivo c) Evita errores de sintaxis d) Permite leer más rápido 
+19. ¿Qué método permite leer todo el contenido de un archivo? 
+a) read() b) write() c) open() d) close() 
+20. ¿Qué ocurre si intentas abrir un archivo que no existe en modo lectura? 
+a) Se crea automáticamente b) Devuelve vacío c) Se ignora d) Error 
+21. ¿Qué devuelve la siguiente función? 
+def funcion():
+   return 5, 10
+a, b = funcion()
+print(a + b)
+a) 15 b) (5,10) c) Error d) "510" 
+22. ¿Qué salida produce el siguiente código? 
+class Persona:
+  def __init__(self, nombre):
+      self.nombre = nombre
+p = Persona("Ana")
+print(p.nombre)
+a) Error b) None c) Persona d) “Ana” 
+23. ¿Qué representa una clase en programación orientada a objetos? 
+a) Un dato b) Una función c) Una función avanzada d) Una plantilla 
+24. ¿Qué es un objeto? 
+a) Una función b) Una instancia de una clase c) Un tipo de dato d) Un archivo 
+25. ¿Qué método se ejecuta automáticamente al crear un objeto? 
+class Animal:
+   def hablar(self):
+       return "Sonido"
+class Perro(Animal):
+pass 
+p = Perro()
+print(p.hablar())
+a) Error b) None c) “Sonido” d) “Perro” 
+26. ¿Qué concepto permite ocultar los detalles internos de una clase? 
+a) Herencia b) Polimorfismo c) No se pueden ocultar los detalles internos de una clase d) Encapsulación 
+27. ¿Qué permite la herencia? 
+a) Repetir código b) Crear funciones c) Reutilizar código entre clases d) Ninguna de las anteriores 
+28. ¿Qué es el polimorfismo? 
+a) Diferentes objetos responden al mismo método de forma distinta b) Capacidad de un objeto de cambiar su valor c) Crear múltiples funciones d) Crear múltiples clases 
+29. ¿Qué palabra clave se usa para manejar errores? 
+a) if b) try c) while d) for 
+30. ¿Qué ocurre si no se captura una excepción? 
+a) Se ignora b) Se corrige automáticamente c) El programa se detiene d) Se repite la ejecución 

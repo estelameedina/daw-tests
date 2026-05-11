@@ -1,0 +1,240 @@
+Trabajas en una comunidad rural donde muchas personas tienen poco acceso a Internet. ¿Cuál es el principal desafío de la digitalización en este contexto?
+		 Inteligencia Artificial   
+		 Brecha digital  
+		 Computación cuántica   
+Estás gestionando una planta industrial y deseas mejorar la eficiencia y reducir el tiempo de inactividad de las máquinas. ¿Qué estrategia te ayudará a integrar IT y OT?
+		 Automatización básica de tareas   
+		 Análisis predictivo y preventivo  
+		 Exclusión de sensores industriales   
+Si estás implementando un sistema para la gestión de datos de una empresa, ¿qué característica específica diferencia a los protocolos de IT respecto a los de OT?
+		 Están diseñados para estabilidad a largo plazo   
+		 Utilizan protocolos industriales especializados   
+		 Priorizan la conectividad y el intercambio de información en toda la organización  
+Una empresa que busca mejorar la trazabilidad y seguridad de sus procesos decide invertir en una tecnología innovadora. ¿Cuál sería la más adecuada?
+		 Telemedicina   
+		 Inteligencia Artificial   
+		 Blockchain  
+Eres responsable de implementar un sistema de monitoreo en tiempo real para una planta industrial. ¿Qué tecnología de convergencia IT/OT podrías utilizar para garantizar la visibilidad total del proceso productivo?
+		 Internet de las Cosas (IoT)  
+		 ERP empresarial   
+		 Computación cuántica   
+Al implementar la convergencia de IT y OT, surge la necesidad de coordinar equipos. ¿Cuál es un desafío cultural significativo?
+		 Colaboración entre equipos  
+		 Disponibilidad de infraestructura   
+		 Actualización de equipos OT   
+Tu objetivo es mejorar la eficiencia operativa y reducir tiempos de inactividad en una línea de producción. ¿Qué estrategia sería la más adecuada con la convergencia IT/OT?
+		 Actualizaciones frecuentes de software OT   
+		 Mantenimiento predictivo  
+		 Cambios continuos en protocolos de comunicación   
+En una empresa de investigación avanzada, buscas resolver problemas complejos que no pueden ser abordados con las tecnologías actuales. ¿Qué tecnología debería implementarse?
+		 Telemedicina   
+		 Computación cuántica  
+		 Inteligencia Artificial básica   
+Como gerente de producción, deseas adaptar rápidamente la línea de producción a una demanda cambiante. ¿Qué impacto positivo tiene la convergencia IT/OT en este contexto?
+		 Mayor rigidez en la operación   
+		 Producción estática y menos flexible   
+		 Capacidad de adaptación dinámica  
+En una organización, IT y OT han operado de forma aislada durante años. ¿Cuál es una diferencia clave en sus ciclos de actualización?
+		 IT tiene ciclos largos y OT cortos   
+		 OT tiene ciclos más largos que IT  
+		 Ambos tienen el mismo ciclo de actualización   
+En un contexto donde los equipos de trabajo están ubicados en diferentes regiones, ¿qué tecnología facilita la colaboración y el acceso a información centralizada?
+		 Realidad virtual   
+		 Cloud computing  
+		 Impresión 3D   
+En una empresa que implementa THD, ¿cuál es el principal rol de la formación continua para sus empleados?
+		 Ayudar a las empresas a reducir costos   
+		 Desarrollar competencias clave como la adaptabilidad  
+		 Evitar la reestructuración de equipos   
+Una empresa desea implementar la inteligencia artificial para mejorar sus procesos operativos. ¿Qué tipo de formación debe priorizar para sus trabajadores en esta etapa inicial?
+		 Habilidades técnicas y blandas  
+		 Habilidades físicas   
+		 Solo habilidades técnicas   
+Una empresa ha definido la necesidad de adoptar la fabricación aditiva para producir piezas personalizadas bajo demanda. ¿Qué debe hacer para asegurar una integración exitosa dentro de sus procesos productivos?
+		 Redefinir la estructura organizativa  
+		 Automatizar los procesos previos   
+		 Eliminar etapas de producción   
+Durante la fase de producción, ¿qué tecnología permite la cooperación segura entre trabajadores humanos y robots?
+		 Cloud computing   
+		 Robótica colaborativa (cobots)  
+		 Big Data   
+¿Qué ventaja ofrece el uso de videopíldoras formativas en el contexto de la formación continua sobre THD para una empresa con personal en distintas ubicaciones?
+		 Facilitan la comprensión de tareas complejas   
+		 Ofrecen contenido actualizado de manera ágil  
+		 Sustituyen completamente el aprendizaje presencial   
+¿Qué tecnología está mejorando la asistencia técnica al cliente mediante la creación de experiencias inmersivas y visualizaciones avanzadas?
+		 Realidad aumentada  
+		 Fabricación aditiva   
+		 Robótica industrial   
+Una empresa decide integrar tecnologías habilitadoras digitales (THD) como el IoT en su producción. ¿Cuál es uno de los primeros pasos que debe dar para adaptarse a la implementación?
+		 Redefinir los roles laborales  
+		 Realizar una inversión masiva en tecnología   
+		 Automatizar todas las tareas   
+En el contexto de la fase de postventa, ¿cuál es el principal beneficio del mantenimiento predictivo para la clientela?
+		 Reducir costos de mantenimiento  
+		 Mejorar la personalización del producto   
+		 Incrementar la flexibilidad de producción   
+Durante la implementación de THD, un líder debe promover un entorno favorable para la transición. ¿Qué acción es clave para minimizar resistencias en la integración de la inteligencia artificial en el equipo de producción?
+		 Ofrecer beneficios económicos   
+		 Fomentar la experimentación y la flexibilidad  
+		 Imponer cambios sin consulta   
+Estás diseñando una aplicación que requiere análisis complejos de grandes volúmenes de datos generados en tiempo real por dispositivos IoT. ¿Qué enfoque híbrido sería el mejor?
+		 Edge Computing con Cloud Computing  
+		 Solo Fog Computing   
+		 SaaS con Edge Computing   
+¿Cuál de las siguientes afirmaciones describe una aplicación del cloud computing en el sector de la salud?
+		 En el ámbito educativo si se aplica pero no se aplica en el sector sanitario.   
+		 Permite la transmisión de contenidos multimedia a gran escala, como películas y música, a través de plataformas de entretenimiento.   
+		 Facilita el almacenamiento y la gestión de grandes cantidades de información médica.  
+En una empresa que necesita procesamiento en tiempo real y análisis a largo plazo, ¿qué enfoque híbrido sería más adecuado?
+		 Solo Cloud Computing   
+		 Edge Computing combinado con Cloud Computing  
+		 Solo Edge Computing   
+Necesitas ofrecer una aplicación de ofimática a tu equipo sin tener que instalar ningún software en sus dispositivos. ¿Qué modelo de servicio deberías elegir?
+		 IaaS   
+		 SaaS  
+		 PaaS   
+Marta está desarrollando una nueva aplicación y no quiere preocuparse por la gestión de servidores ni infraestructura. ¿Qué modelo de servicio le conviene utilizar?
+		 IaaS   
+		 PaaS  
+		 SaaS   
+¿Cuál es uno de los principales desafíos al integrar Cloud Computing y Edge Computing en una infraestructura híbrida?
+		 Baja escalabilidad   
+		 Complejidad de gestión y seguridad  
+		 Limitación de ancho de banda   
+Juan trabaja en una planta de manufactura y necesita un sistema que detecte fallos en la producción en tiempo real para evitar tiempos de inactividad. ¿Qué tecnología debería implementar?
+		 Cloud Computing   
+		 Edge Computing  
+		 SaaS   
+Eres responsable de un sistema IoT en una fábrica y necesitas que los datos se procesen localmente para minimizar la latencia. ¿Qué enfoque es el más adecuado?
+		 Edge Computing  
+		 Cloud Computing   
+		 Fog Computing   
+Necesitas diseñar un sistema que pueda escalar rápidamente en capacidad durante períodos de alta demanda sin necesidad de infraestructura física. ¿Cuál de los modelos de servicio en la nube es más adecuado?
+		 SaaS   
+		 PaaS   
+		 IaaS  
+Eres responsable de una empresa que debe almacenar grandes volúmenes de datos históricos para análisis futuros. ¿Qué enfoque utilizarías para el almacenamiento y análisis?
+		 Edge Computing   
+		 Cloud Computing  
+		 Fog Computing   
+Eres la persona encargada de optimizar la producción en una planta manufacturera usando IA. ¿Qué estrategia sería más adecuada para reducir tiempos de inactividad?
+		 Implementación de mantenimiento predictivo.  
+		 Análisis de riesgo financiero.   
+		 Uso de asistentes virtuales para consulta técnica.   
+Eres responsable de un programa de formación laboral en un sector impactado por la IA. ¿Qué aspecto deberías priorizar para mantener la empleabilidad del alumnado?
+		 Formación en tareas repetitivas y basadas en reglas.   
+		 Desarrollo de competencias en análisis de datos y programación.  
+		 Formación en supervisión de vehículos autónomos.   
+Estás gestionando una compañía de logística y deseas usar IA para hacer tus operaciones más eficientes. ¿Qué aplicación te sería más útil?
+		 Optimización de rutas de distribución.  
+		 Mantenimiento predictivo en maquinaria.   
+		 Detección temprana de cáncer.   
+Necesitas aumentar la eficiencia en una planta industrial usando IA. ¿Qué ventaja clave puedes lograr con esta tecnología?
+		 Reducir tiempos de espera de pacientes.   
+		 Automatización y reducción de errores humanos.  
+		 Personalizar recomendaciones para la clientela.   
+Necesitas asegurar la equidad en un sistema de IA que toma decisiones sobre contratación. ¿Qué desafío ético debe abordarse principalmente?
+		 Transparencia del algoritmo.   
+		 Sesgo algorítmico en los datos.  
+		 Automatización de tareas repetitivas.   
+Como directora de un banco, quieres implementar IA para mejorar la experiencia del cliente. ¿Qué solución podría ser la más eficaz?
+		 Chatbots para atención al cliente.  
+		 Drones para monitoreo de cultivos.   
+		 Optimización de mantenimiento de maquinaria.   
+Marta es responsable de mejorar la eficiencia energética en una fábrica. Quiere utilizar IA para prever la demanda de electricidad. ¿Qué técnica puede ser útil?
+		 Optimización de rutas de distribución.   
+		 Análisis de datos históricos mediante machine learning.  
+		 Personalización de servicios al cliente.   
+Como gerente de una compañía agrícola, decides implementar IA para mejorar la calidad de los cultivos. ¿Qué combinación tecnológica sería la más efectiva?
+		 Uso de drones y sensores con IA.  
+		 Mantenimiento predictivo de maquinaria.   
+		 Chatbots para atención a clientela.   
+Necesitas desarrollar políticas para regular el uso de IA en el sector financiero. ¿Qué aspecto legal sería fundamental considerar?
+		 Responsabilidad por errores del sistema de IA.  
+		 Uso de drones para supervisión.   
+		 Personalización de ofertas mediante IA.   
+Eres responsable de la implementación de IA en una empresa de transporte. ¿Qué aplicación podría mejorar la eficiencia en la distribución de mercancías?
+		 Fábricas inteligentes.   
+		 Optimización de rutas mediante IA.  
+		 Análisis de imágenes médicas.   
+Marta trabaja en una empresa de manufactura y necesita reducir la latencia en la comunicación entre dispositivos críticos. ¿Qué tecnología debería implementar?
+		 Fog Computing   
+		 Edge Computing  
+		 Computación en la Nube   
+Necesitas realizar simulaciones de un nuevo proceso de producción sin riesgo de implementación física. ¿Qué tecnología utilizarías?
+		 Edge Computing   
+		 Simulación en la Nube  
+		 Mist Computing   
+Eres la persona encargada de un hospital y quieres proteger la disponibilidad de los sistemas médicos críticos. ¿Qué medida proactiva sería más adecuada?
+		 Realizar copias de seguridad regulares.   
+		 Análisis post-incidente para mejorar defensas.   
+		 Verificar el correcto funcionamiento de los sistemas médicos.  
+Para gestionar datos provenientes de diferentes áreas de una planta industrial y analizarlos antes de enviarlos a la nube, ¿qué arquitectura sería más adecuada?
+		 Edge Computing   
+		 Fog Computing  
+		 Mist Computing   
+Tienes que responder a una intrusión detectada en tu sistema. ¿Qué acción reactiva es esencial para comprender cómo ocurrió el ataque y evitar futuros incidentes?
+		 Capacitación del personal sobre ciberseguridad   
+		 Recolección de evidencia y análisis post-incidente  
+		 Implementación de un firewall adicional   
+Eres responsable de la seguridad informática en una planta industrial y necesitas elegir una solución que combine el procesamiento distribuido y la capacidad de análisis centralizado. ¿Qué tecnología es la más adecuada para cumplir con estos requisitos?
+		 Computación en la Nube   
+		 Edge Computing y Computación en la Nube combinadas  
+		 Fog Computing   
+En una empresa que maneja grandes volúmenes de datos de clientes, ¿qué beneficio ofrece el uso de Big Data para mejorar la toma de decisiones?
+		 Permite almacenar grandes cantidades de datos sin necesidad de procesarlos.   
+		 Reduce la necesidad de utilizar herramientas de análisis avanzadas.   
+		 Facilita el análisis en tiempo real para identificar patrones y tendencias.  
+Eres responsable del mantenimiento de maquinaria en una fábrica y deseas implementar análisis predictivo para evitar fallos. ¿Qué herramienta te sería más útil?
+		 Edge Computing   
+		 Simulación en la Nube   
+		 Analítica Predictiva en la Nube  
+Estás encargado de una red de sensores en una planta química que requiere una respuesta inmediata ante cambios de temperatura. ¿Cuál sería la mejor arquitectura?
+		 Fog Computing   
+		 Mist Computing  
+		 Computación en la Nube   
+Necesitas integrar sensores que monitorean condiciones ambientales críticas y requieren tomar decisiones de forma autónoma. ¿Qué enfoque computacional es el más adecuado?
+		 Mist Computing  
+		 Fog Computing   
+		 Computación en la Nube   
+Necesitas evaluar el éxito de la transformación digital en tu organización. ¿Qué estrategia sería más efectiva para medir el impacto?
+		 Revisar la satisfacción del equipo   
+		 Definir indicadores clave de rendimiento (KPI)  
+		 Observar el aumento de la carga de trabajo   
+Eres parte del equipo de transformación digital de una empresa industrial. ¿Qué lección aprendida de Siemens debería aplicar para maximizar el valor de los datos obtenidos?
+		 Implementar la infraestructura digital antes de analizar datos   
+		 Asegurarse de la recopilación de datos en tiempo real para optimización constante  
+		 Realizar cambios sin involucrar al equipo   
+Necesitas justificar la inversión en la transformación digital. ¿Cuál es uno de los mayores beneficios estratégicos que podrías presentar?
+		 Reducción de personal necesario   
+		 Mejora en la experiencia del cliente  
+		 Eliminación de procesos manuales   
+Carla está liderando la implementación tecnológica en su empresa. ¿Qué acción debería priorizar para asegurar una transición eficiente?
+		 Asignar múltiples proyectos simultáneamente   
+		 Capacitar al equipo en el uso de las nuevas herramientas  
+		 Enfocarse solo en el hardware necesario   
+Marta está liderando la revisión de procesos operativos tras la implementación digital. ¿Qué método debería usar para comparar el rendimiento de su empresa con el de la competencia?
+		 Análisis cuantitativo de KPIs   
+		 Benchmarking  
+		 Encuestas de satisfacción del personal   
+Luis, un directivo de tu empresa, está preocupado por la resistencia al cambio que podría tener su equipo. ¿Qué medida le recomendarías para alinear a sus empleados con el proceso de transformación?
+		 Imponer nuevas tecnologías rápidamente   
+		 Involucrar a las personas empleadas en el proceso  
+		 Reorganizar el equipo sin consulta   
+Carla está evaluando el éxito de la transformación digital en su fábrica. Quiere centrarse en la percepción del equipo. ¿Qué método sería más adecuado para este propósito?
+		 Encuestas de satisfacción del personal  
+		 Análisis comparativo de competencia   
+		 Revisión de procesos operativos   
+Juan es responsable de implementar la transformación digital en una planta de energía. ¿Qué aspecto debería priorizar para mejorar la sostenibilidad operativa según el ejemplo de GE?
+		 Desarrollar proyectos piloto antes de escalar  
+		 Centrarse solo en la capacitación del equipo   
+		 Eliminar completamente los procesos manuales   
+Necesitas ajustar el proyecto de transformación digital porque los resultados no alcanzan las metas establecidas. ¿Qué acción deberías tomar para asegurar una mejora efectiva?
+		 Redefinir los KPIs establecidos   
+		 Analizar las causas subyacentes y ajustar las estrategias  
+		 Aumentar la inversión en tecnologías   
+Eres responsable del análisis del impacto del proyecto de transformación digital de tu empresa. ¿Qué indicador clave de desempeño (KPI) utilizarías para evaluar la eficiencia operativa?
+		 Adopción de nuevas tecnologías   
+		 Reducción de costos operacionales  
+		 Satisfacción de las personas usuarias   

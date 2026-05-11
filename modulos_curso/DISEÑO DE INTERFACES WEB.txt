@@ -1,0 +1,240 @@
+¿Cuál es la función de la propiedad position en CSS?
+		 Cambiar el color de un elemento.   
+		 Aplicar fuentes personalizadas.   
+		 Definir la ubicación y el comportamiento de un elemento dentro de su contenedor.  
+¿Cuál es una característica principal de un prototipo de alta fidelidad?
+		 Se crea solo con bocetos en papel.   
+		 Representa con detalle la apariencia y funcionalidad del producto final.  
+		 Solo incluye texto sin elementos gráficos.   
+¿Cómo puede ayudar la inteligencia artificial en Visual Studio Code durante el desarrollo web?
+		 Elimina automáticamente los comentarios del código.   
+		 Sugiere código, corrige errores y acelera el proceso de programación mediante asistentes como GitHub Copilot.  
+		 Genera automáticamente los archivos HTML base del proyecto.   
+¿Para qué se utilizan los marcos o contenedores en diseño de interfaces?
+		 Para cambiar el color de fondo del sitio.   
+		 Para dividir y estructurar el contenido visualmente.  
+		 Para alinear textos en el centro.   
+¿Qué función cumple la jerarquía visual en una interfaz de usuario?
+		 Usar colores llamativos en todo el diseño.   
+		 Guiar al usuario mostrando visualmente qué elementos son más importantes.  
+		 Aplicar sombras a los botones.   
+¿Por qué se recomienda crear un mapa de navegación al diseñar una interfaz?
+		 Para elegir la paleta de colores del proyecto.   
+		 Para planificar la estructura del sitio y mejorar la usabilidad.  
+		 Para reducir el tamaño de los archivos CSS.   
+¿Qué utilidad tiene la retroalimentación visual en una interfaz?
+		 Permitir que el usuario edite el contenido.   
+		 Mostrar el diseño de la base de datos.   
+		 Informar al usuario que su acción fue reconocida o procesada.  
+¿Cuál de las siguientes herramientas está pensada específicamente para crear prototipos interactivos?
+		 Visual Studio Code   
+		 Figma  
+		 Git   
+¿Qué aporta la consistencia en el diseño de una aplicación web?
+		 Hace que el diseño sea más colorido.   
+		 Genera una experiencia uniforme y fácil de entender para el usuario.  
+		 Evita usar elementos repetidos.   
+¿Qué es SVG en el contexto del diseño web?
+		 Un sistema de navegación vertical.   
+		 Un formato basado en XML para mostrar gráficos vectoriales escalables.  
+		 Una propiedad avanzada de CSS.   
+¿Qué función cumple JavaScript en una página web?
+		 Dar estructura y semántica al contenido de la página.   
+		 Aplicar estilos visuales como colores y márgenes.   
+		 Añadir interactividad y comportamiento dinámico a los elementos HTML.  
+¿Qué se entiende por diseño web adaptable (responsive)?
+		 Un diseño que utiliza solamente medidas fijas.   
+		 Un diseño que se ajusta automáticamente a diferentes dispositivos y resoluciones.  
+		 Un diseño compatible solo con navegadores modernos.   
+¿Cuál es el objetivo del anidamiento de selectores en CSS?
+		 Repetir los estilos de un selector en otro.   
+		 Organizar mejor los estilos en función de jerarquías de elementos.  
+		 Dividir el archivo CSS en secciones más pequeñas.   
+¿Qué beneficios se obtienen al escribir CSS de forma organizada?
+		 Mejora la comprensión y mantenimiento del código a largo plazo.  
+		 Obliga a usar menos propiedades por selector.   
+		 Permite usar más colores y fuentes sin límites.   
+¿Cuál es el propósito principal de CSS en una página web?
+		 Crear estructuras lógicas de contenido.   
+		 Establecer estilos visuales como colores, tamaños y márgenes.  
+		 Almacenar datos de los formularios web.   
+¿Qué permite hacer la agrupación de selectores en CSS?
+		 Escribir reglas separadas para cada elemento.   
+		 Aplicar los mismos estilos a varios elementos con una sola regla.  
+		 Cambiar el orden de aparición de los elementos en la página.   
+¿Qué ventaja aporta separar HTML del CSS?
+		 Permite escribir menos código en HTML.   
+		 Mejora la accesibilidad de los formularios.   
+		 Facilita la actualización del diseño sin modificar el contenido.  
+¿Cómo influye el rendimiento de carga en la experiencia del usuario?
+		 Un sitio lento mejora la calidad visual.   
+		 Un sitio rápido mejora la interacción y reduce la tasa de rebote.  
+		 Un sitio lento garantiza mayor compatibilidad.   
+¿Qué ocurre cuando varias reglas CSS aplican a un mismo elemento?
+		 El navegador ignora todas y aplica un estilo por defecto.   
+		 La última regla escrita siempre gana.   
+		 Se aplica la regla con mayor especificidad o prioridad.  
+¿Qué permite hacer el atributo class en HTML?
+		 Dar formato directamente al texto dentro del elemento.   
+		 Agrupar elementos para aplicarles estilos comunes desde CSS.  
+		 Cambiar el tipo de etiqueta HTML dinámicamente.   
+¿Qué tecnologías pueden usarse para crear animaciones con imágenes estáticas?
+		 CSS   
+		 JavaScript   
+		 Ambas opciones son correctas.  
+¿Cuál de estas herramientas es un ejemplo para optimizar vídeos?
+		 Adobe Premiere Pro  
+		 Microsoft Word   
+		 Excel   
+¿Qué se entiende por codificación de vídeo?
+		 Convertir un archivo de vídeo a un formato específico utilizando un algoritmo de compresión.  
+		 Cambiar la resolución de un vídeo.   
+		 Añadir efectos visuales a un vídeo.   
+¿Qué implica crear animaciones a partir de imágenes estáticas?
+		 Mostrar imágenes fijas en rápida sucesión para crear la ilusión de movimiento.  
+		 Crear imágenes en 3D.   
+		 Convertir imágenes en texto.   
+¿En qué consiste animar imágenes y texto en una página web?
+		 Mover, cambiar el tamaño o alterar la apariencia de las imágenes y texto en respuesta a eventos del usuario o a la carga de la página.  
+		 Cambiar el color de fondo de una página web.   
+		 Añadir música de fondo a una página web.   
+¿Cuál de los siguientes códecs de vídeo es uno de los más utilizados en la web?
+		 H.264  
+		 JPEG   
+		 GIF   
+¿Cuál tecnología permite añadir interactividad a un vídeo?
+		 CSS   
+		 JavaScript  
+		 HTML   
+¿Qué se debe considerar al elegir un códec de vídeo?
+		 La compatibilidad con navegadores y dispositivos.  
+		 El color del fondo del vídeo.   
+		 El número de fotogramas por segundo.   
+¿Por qué es fundamental considerar la compatibilidad con navegadores y dispositivos al seleccionar un formato de vídeo?
+		 Para garantizar que el contenido sea accesible para la mayoría de los visitantes.  
+		 No es importante en absoluto.   
+		 Para mejorar la calidad del vídeo.   
+¿Qué aspectos son importantes al integrar audio y vídeo en una animación?
+		 Ajustar la apariencia y el comportamiento con CSS.   
+		 Probar la reproducción en diferentes navegadores y dispositivos.   
+		 Ambas opciones son correctas.  
+¿Cuál de las siguientes opciones representa un comportamiento dinámico típico en una web?
+		 Añadir una tabla.   
+		 Insertar texto estático.   
+		 Mostrar un menú desplegable al hacer clic.  
+¿Qué hace un evento al ser detectado por el navegador?
+		 Ignora la interacción del usuario.   
+		 Activa funciones o acciones programadas.  
+		 Solo registra la acción.   
+¿Cuál es el objetivo de ejecutar funciones al cargar una página?
+		 Detener el renderizado.   
+		 Establecer configuraciones iniciales o cargar contenido dinámico.  
+		 Cambiar el idioma.   
+¿Qué ocurre al ejecutar scripts en el momento de cargar la página?
+		 Se cambia el color de fondo.   
+		 Se ejecutan instrucciones necesarias para inicializar funciones.  
+		 Se bloquea la interacción del usuario.   
+¿Cómo se puede lograr que un botón cambie de estilo al pasar el cursor?
+		 Con una tabla HTML.   
+		 Mediante eventos y JavaScript o CSS.  
+		 Con un enlace externo.   
+¿Por qué es útil validar formularios mientras el usuario escribe?
+		 Para decorar el formulario.   
+		 Para proporcionar retroalimentación inmediata.  
+		 Para ocultar campos.   
+¿Qué eventos permiten detectar movimientos del ratón sobre elementos web?
+		 Eventos de formulario.   
+		 Eventos de scroll.   
+		 Eventos del ratón (mouseover, mousemove).  
+¿Cuál es el nombre correcto del mecanismo que escucha eventos en JavaScript?
+		 EventTrigger.   
+		 Event Listener.  
+		 EventTracker.   
+¿Qué permiten hacer los elementos interactivos en una página web?
+		 Mejorar el diseño visual.   
+		 Interactuar con el contenido de forma dinámica.  
+		 Solo visualizar información.   
+¿Por qué se utilizan scripts en una página web moderna?
+		 Para escribir contenido.   
+		 Para dotarla de comportamiento e interactividad.  
+		 Para ajustar márgenes.   
+¿Cuál es el propósito principal de la Iniciativa de Accesibilidad Web (WAI)?
+		 Desarrollar navegadores web.   
+		 Promover la educación y conciencia sobre la accesibilidad web.  
+		 Diseñar estándares para aplicaciones móviles.   
+¿En qué consisten los Principios Generales de Diseño Accesible?
+		 Crear diseños visualmente atractivos.   
+		 Perceptibilidad, operabilidad, comprensibilidad, robustez.  
+		 Optimizar la velocidad de carga de la página.   
+¿Qué son los Métodos de Revisiones Preliminares en el contexto de la accesibilidad web?
+		 Estrategias para evaluar la velocidad de carga de un sitio web.   
+		 Procedimientos para realizar revisiones iniciales de la accesibilidad web.  
+		 Métodos para diseñar interfaces interactivas.   
+¿En qué consiste el principio de operabilidad en el diseño accesible?
+		 Utilizar descripciones textuales para imágenes.   
+		 Garantizar que todas las funciones del sitio web sean accesibles mediante el teclado.  
+		 Utilizar colores con suficiente contraste.   
+¿Qué principios fundamentales guían las WCAG?
+		 Diseño gráfico, funcionalidad, contenido interactivo.   
+		 Perceptibilidad, operabilidad, comprensibilidad, robustez.  
+		 Velocidad de carga, adaptabilidad, marketing.   
+¿Cómo se clasifican los requisitos de accesibilidad según las WCAG?
+		 Por colores y tipografías.   
+		 Por niveles de adecuación y prioridades.  
+		 Por velocidad de carga.   
+¿Cuál es la misión del Consorcio World Wide Web (W3C)?
+		 Desarrollar aplicaciones web.   
+		 Establecer estándares web y promover la accesibilidad.  
+		 Gestionar servidores de la World Wide Web.   
+¿Qué son las Técnicas para Satisfacer los Requisitos de las WCAG?
+		 Estrategias para mejorar la velocidad de carga.   
+		 Enfoques específicos para implementar los requisitos definidos en las WCAG.  
+		 Métodos para gestionar servidores web.   
+¿Qué contribución realiza la WAI al desarrollo de pautas de accesibilidad?
+		 Desarrolla navegadores web.   
+		 Contribuye al desarrollo de pautas como las WCAG.  
+		 Diseña aplicaciones móviles.   
+¿Cuál es la función principal de las Herramientas de Análisis de Accesibilidad Web?
+		 Crear contenido interactivo.   
+		 Identificar y corregir problemas de accesibilidad en un sitio web.  
+		 Mejorar la velocidad de carga de una página.   
+¿Qué aspectos se verifican al evaluar la usabilidad en distintos navegadores y dispositivos?
+		 Solo la velocidad de carga de las páginas.   
+		 La funcionalidad, apariencia y experiencia homogénea en cada entorno.  
+		 Únicamente el contenido textual.   
+¿Cómo se define la usabilidad en el ámbito de la web?
+		 La rapidez con la que se descarga un sitio.   
+		 La facilidad con la que los usuarios pueden navegar y utilizar un sitio web.  
+		 La complejidad del diseño visual.   
+¿Qué finalidad tiene que la navegación sea fácilmente redescubierta por el usuario?
+		 Confundir y dificultar el uso del sitio.   
+		 Ayudar a los usuarios a orientarse y volver a encontrar la información sin dificultad.  
+		 Restringir áreas sensibles para ciertos perfiles.   
+¿Por qué es esencial definir el propósito de un sitio web antes de diseñarlo?
+		 Para limitar la creatividad del equipo de diseño.   
+		 Para orientar la estructura y funcionalidades hacia las necesidades del usuario.  
+		 Porque no influye en la experiencia del visitante.   
+¿Cuál es la importancia de optimizar la velocidad de carga en una página web?
+		 Mejorar únicamente la apariencia gráfica.   
+		 Garantizar que el contenido se muestre rápidamente para mantener la atención del usuario.  
+		 Aumentar la cantidad de elementos multimedia en la página.   
+¿Qué significa que un sitio web sea accesible?
+		 Que tenga un diseño elaborado y sofisticado.   
+		 Que cualquier persona, independientemente de sus capacidades, pueda usarlo sin barreras.  
+		 Que limite el acceso a usuarios específicos.   
+¿Cuál es el principal objetivo de realizar pruebas con usuarios reales durante el desarrollo?
+		 Automatizar el control de calidad.   
+		 Detectar fallos y mejorar la experiencia basada en el comportamiento real de los usuarios.  
+		 Medir la velocidad de respuesta del servidor.   
+¿Por qué es fundamental que la navegación de un sitio sea sencilla y clara?
+		 Para dificultar el acceso a usuarios no deseados.   
+		 Para mejorar la satisfacción y eficiencia de uso por parte de los visitantes.  
+		 Para aumentar el número de páginas internas.   
+¿Qué ventajas ofrece seguir estándares reconocidos en el desarrollo web?
+		 Complicar el mantenimiento del sitio.   
+		 Dificultar la compatibilidad con navegadores.   
+		 Facilitar la accesibilidad, interoperabilidad y mantenimiento a largo plazo.  
+¿Qué busca lograr una navegación intuitiva y fácil de recordar?
+		 Desorientar a los visitantes para reducir tráfico.   
+		 Permitir que los usuarios localicen y recuerden fácilmente las secciones del sitio.  
+		 Restringir el acceso a ciertas áreas.   

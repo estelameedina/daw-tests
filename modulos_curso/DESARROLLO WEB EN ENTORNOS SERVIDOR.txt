@@ -1,0 +1,360 @@
+¿Cuál es la función principal de JavaScript en una página web?
+		 Definir la estructura y el contenido, como encabezados y párrafos.   
+		 Controlar el diseño visual y el estilo, incluyendo colores y fuentes.   
+		 Añadir interactividad, manipular elementos HTML y CSS, y crear contenido dinámico en tiempo real.  
+Elección del Lenguaje Adecuado: Al elegir un lenguaje de programación del lado del servidor, ¿qué factor se destaca como esencial para acelerar el desarrollo y proporcionar soluciones probadas a problemas comunes?
+		 La experiencia previa del equipo de desarrollo con el lenguaje.   
+		 La popularidad del lenguaje en la comunidad de código abierto.   
+		 La disponibilidad y calidad de frameworks, bibliotecas y herramientas de desarrollo.  
+Una de las características cruciales de los lenguajes de programación del lado del servidor es la "gestión de sesiones". ¿Qué permite esta funcionalidad?
+		 La encriptación de datos sensibles durante la transmisión.   
+		 La optimización de algoritmos para reducir la complejidad del código.   
+		 Mantener el estado del usuario a lo largo de varias solicitudes, personalizando la experiencia.  
+¿Cuál de los siguientes servidores web es destacado por su capacidad para manejar eficientemente un gran número de conexiones simultáneas y por su alto rendimiento, siendo ideal para sitios web con mucho tráfico?
+		 Apache HTTP Server   
+		 Microsoft Internet Information Services (IIS)   
+		 Nginx  
+¿Por qué XML sigue siendo relevante en entornos empresariales y sistemas legados?
+		 Porque facilita la creación de interfaces gráficas interactivas en navegadores.   
+		 Porque permite estructurar datos de forma estandarizada y es usado en configuraciones y sistemas antiguos.  
+		 Porque es más rápido y ligero que JSON en aplicaciones modernas.   
+En el contexto de las bases de datos en el modelo cliente/servidor, ¿para qué tipo de aplicaciones las bases de datos SQL son "ideales”?
+		 Para manejar grandes volúmenes de datos no estructurados o semiestructurados y requerir escalabilidad horizontal.   
+		 Para aplicaciones que requieren integridad de datos y transacciones complejas, como sistemas de gestión financiera.  
+		 Para plataformas de redes sociales y sistemas de análisis de big data.   
+¿Cuál es uno de los principales beneficios de la Integración Continua (CI)?
+		 La automatización del despliegue de código a un entorno de producción de forma inmediata.   
+		 La detección y resolución temprana de errores al integrar y probar los cambios de código con frecuencia.  
+		 La optimización del rendimiento de la base de datos a través de herramientas de monitoreo.   
+En el modelo Cliente/Servidor, ¿qué ventaja principal ofrece el modelo de Tres Niveles frente al de Dos Niveles?
+		 Permite mayor escalabilidad y mantenimiento al separar la capa de lógica de negocio.  
+		 Mejora únicamente la presentación de datos en el cliente.   
+		 Elimina la necesidad de gestionar bases de datos.   
+¿Cuál es la desventaja principal de CGI que llevó a su reemplazo por tecnologías más eficientes?
+		 Su limitación a un único lenguaje de programación, como Perl.   
+		 Su bajo rendimiento, debido a la creación de un nuevo proceso para cada solicitud.  
+		 La falta de flexibilidad para interactuar con bases de datos.   
+¿Qué característica clave distingue al "Modelo de Tres Niveles" de otros modelos cliente/servidor?
+		 La lógica de la aplicación se divide únicamente en cliente y servidor, sin capas intermedias.   
+		 Se añaden más capas como servicios web y colas de mensajes para mayor flexibilidad.   
+		 Introduce una capa intermedia para la lógica de negocio, mejorando la escalabilidad, seguridad y mantenimiento.  
+¿Cuál de los siguientes servidores web es destacado por su capacidad para manejar eficientemente un gran número de conexiones simultáneas y por su alto rendimiento, siendo ideal para sitios web con mucho tráfico?
+		 Apache HTTP Server   
+		 Microsoft Internet Information Services (IIS)   
+		 Nginx  
+¿Cuál es la desventaja principal de CGI que llevó a su reemplazo por tecnologías más eficientes?
+		 Su limitación a un único lenguaje de programación, como Perl.   
+		 Su bajo rendimiento, debido a la creación de un nuevo proceso para cada solicitud.  
+		 La falta de flexibilidad para interactuar con bases de datos.   
+En el contexto de las bases de datos en el modelo cliente/servidor, ¿para qué tipo de aplicaciones las bases de datos SQL son "ideales”?
+		 Para manejar grandes volúmenes de datos no estructurados o semiestructurados y requerir escalabilidad horizontal.   
+		 Para aplicaciones que requieren integridad de datos y transacciones complejas, como sistemas de gestión financiera.  
+		 Para plataformas de redes sociales y sistemas de análisis de big data.   
+Elección del Lenguaje Adecuado: Al elegir un lenguaje de programación del lado del servidor, ¿qué factor se destaca como esencial para acelerar el desarrollo y proporcionar soluciones probadas a problemas comunes?
+		 La experiencia previa del equipo de desarrollo con el lenguaje.   
+		 La popularidad del lenguaje en la comunidad de código abierto.   
+		 La disponibilidad y calidad de frameworks, bibliotecas y herramientas de desarrollo.  
+¿Qué característica clave distingue al "Modelo de Tres Niveles" de otros modelos cliente/servidor?
+		 La lógica de la aplicación se divide únicamente en cliente y servidor, sin capas intermedias.   
+		 Se añaden más capas como servicios web y colas de mensajes para mayor flexibilidad.   
+		 Introduce una capa intermedia para la lógica de negocio, mejorando la escalabilidad, seguridad y mantenimiento.  
+Una de las características cruciales de los lenguajes de programación del lado del servidor es la "gestión de sesiones". ¿Qué permite esta funcionalidad?
+		 La encriptación de datos sensibles durante la transmisión.   
+		 La optimización de algoritmos para reducir la complejidad del código.   
+		 Mantener el estado del usuario a lo largo de varias solicitudes, personalizando la experiencia.  
+¿Por qué XML sigue siendo relevante en entornos empresariales y sistemas legados?
+		 Porque facilita la creación de interfaces gráficas interactivas en navegadores.   
+		 Porque permite estructurar datos de forma estandarizada y es usado en configuraciones y sistemas antiguos.  
+		 Porque es más rápido y ligero que JSON en aplicaciones modernas.   
+¿Cuál es la función principal de JavaScript en una página web?
+		 Definir la estructura y el contenido, como encabezados y párrafos.   
+		 Controlar el diseño visual y el estilo, incluyendo colores y fuentes.   
+		 Añadir interactividad, manipular elementos HTML y CSS, y crear contenido dinámico en tiempo real.  
+¿Cuál es uno de los principales beneficios de la Integración Continua (CI)?
+		 La automatización del despliegue de código a un entorno de producción de forma inmediata.   
+		 La detección y resolución temprana de errores al integrar y probar los cambios de código con frecuencia.  
+		 La optimización del rendimiento de la base de datos a través de herramientas de monitoreo.   
+En el modelo Cliente/Servidor, ¿qué ventaja principal ofrece el modelo de Tres Niveles frente al de Dos Niveles?
+		 Permite mayor escalabilidad y mantenimiento al separar la capa de lógica de negocio.  
+		 Mejora únicamente la presentación de datos en el cliente.   
+		 Elimina la necesidad de gestionar bases de datos.   
+Según las mejores prácticas para la validación de datos del lado del servidor, ¿qué se debe asumir siempre con respecto a los datos provenientes del cliente?
+		 Que la validación del lado del cliente es suficiente para la mayoría de los casos.   
+		 Que los datos de clientes de confianza pueden procesarse sin necesidad de validaciones adicionales.   
+		 Que los datos del cliente pueden estar corruptos o ser maliciosos.  
+Al implementar estructuras de toma de decisión en el desarrollo web del lado del servidor, ¿cuál es una consideración de seguridad crucial?
+		 Priorizar el uso de operadores ternarios para simplificar la lógica del código.   
+		 Realizar un manejo adecuado de las condiciones para prevenir vulnerabilidades de seguridad, como la ejecución de código no autorizado o la exposición de datos sensibles.  
+		 Limitar el número de declaraciones if anidadas para mejorar el rendimiento de la aplicación.   
+Respecto al concepto de ámbito (scope) de las funciones, ¿cuál es la diferencia clave entre una variable global y una variable local?
+		 Las variables globales se definen dentro de una función, mientras que las variables locales se definen fuera de cualquier función.   
+		 Las variables locales persisten durante toda la ejecución del programa, a diferencia de las globales.   
+		 Las variables globales son accesibles desde cualquier parte del código, mientras que las variables locales están limitadas a ser accesibles únicamente dentro de la función o bloque donde se definen.  
+Para prevenir ataques de Inyección SQL al procesar datos de formularios en el servidor, ¿cuál es la práctica recomendada?
+		 Concatenar directamente los datos del formulario en las consultas SQL para simplificar el código.   
+		 Utilizar consultas parametrizadas o preparadas para evitar que los atacantes inyecten código SQL malicioso.  
+		 Depender únicamente de la validación del lado del cliente, ya que proporciona una protección suficiente contra este tipo de ataques.   
+¿Qué característica fundamental distingue a los objetos de los arrays?
+		 Los objetos mantienen un orden específico para sus elementos, al igual que los arrays.   
+		 Los objetos son colecciones de pares clave-valor y, a diferencia de los arrays, no mantienen un orden específico para sus elementos.  
+		 Los objetos solo pueden contener elementos del mismo tipo de dato, similar a los arrays homogéneos en algunos lenguajes.   
+¿Cuándo es la declaración switch particularmente útil como alternativa a una estructura if-else if-else?
+		 Cuando es necesario evaluar condiciones complejas que involucran múltiples operadores lógicos.   
+		 Cuando todas las condiciones dependen del valor de una sola variable y se basan en comparaciones de igualdad.  
+		 Cuando la lógica requiere evaluar un rango de valores para una variable específica.   
+¿Cuál es una ventaja de seguridad de las sesiones frente a las cookies para almacenar información sensible?
+		 Las cookies almacenan siempre la información en el cliente, mientras que las sesiones la guardan en el servidor.  
+		 Las cookies cifran automáticamente su contenido, mientras que las sesiones no lo hacen.   
+		 Las sesiones no requieren identificadores únicos para mantener la asociación con el usuario.   
+¿Qué es lo que define un "cierre" o "closure" en la programación?
+		 Una función que solo puede acceder a variables definidas dentro de su propio bloque de código.   
+		 La capacidad de una función de recordar y acceder a su ámbito léxico (el entorno donde fue creada), incluso cuando la función se ejecuta fuera de dicho ámbito.  
+		 Una función que automáticamente libera la memoria de sus variables locales una vez finalizada su ejecución.   
+¿Cuál es una característica distintiva del bucle do-while en comparación con el bucle while?
+		 Es ideal cuando el número de iteraciones se conoce de antemano.   
+		 Garantiza que el cuerpo del bucle se ejecute al menos una vez, ya que la condición se verifica después de la ejecución del cuerpo del bucle.  
+		 La condición de continuación del bucle se evalúa exclusivamente al inicio de cada iteración.   
+¿En qué escenario son particularmente útiles los bucles anidados en el desarrollo web del lado del servidor?
+		 Cuando se necesita iterar sobre un número fijo de elementos en un array unidimensional.   
+		 Cuando se trabaja con estructuras de datos que tienen múltiples dimensiones, como matrices o tablas bidimensionales.  
+		 Para implementar un menú de opciones donde se le solicita al usuario que elija una opción al menos una vez.   
+Además del patrón Modelo-Vista-Controlador (MVC), ¿qué otros patrones de diseño se mencionan en el curso que también promueven una separación efectiva de la lógica de negocio y la presentación?
+		 Solo el patrón de Microservicios para la escalabilidad del backend.   
+		 MVP (Modelo-Vista-Presentador) y MVVM (Modelo-Vista-VistaModelo).  
+		 Patrones de factoría y observador para la creación y gestión de objetos.   
+En el contexto de los controles de servidor, ¿cuál es la principal diferencia entre PHP y ASP.NET?
+		 En ASP.NET existen bibliotecas de controles predefinidos que se procesan en el servidor, mientras que en PHP suelen crearse manualmente con scripts personalizados.  
+		 PHP ofrece bibliotecas de controles listas para arrastrar y soltar, mientras que ASP.NET obliga a escribir HTML directamente.   
+		 Ninguno de los dos entornos permite usar controles dinámicos en formularios web.   
+Según el patrón de diseño Modelo-Vista-Controlador (MVC), ¿cuál es la función principal del componente Modelo?
+		 Presentar los datos al usuario y recibir sus interacciones.   
+		 Actuar como intermediario entre la Vista y el Controlador para controlar el flujo de datos.   
+		 Manejar la lógica de negocio y las interacciones con la base de datos, sin conocimiento directo de la interfaz de usuario.  
+¿Qué tipo de herramientas se mencionan en la unidad como apoyo para mejorar la experiencia de usuario en interfaces dinámicas?
+		 Librerías de animación y efectos visuales, además de frameworks de CSS.  
+		 Únicamente jQuery como estándar de animación.   
+		 Herramientas de bases de datos orientadas a objetos.   
+Entre los frameworks de JavaScript mencionados en la unidad, ¿cuál es conocido por ser un framework progresivo y por su facilidad de integración en proyectos existentes, además de un enfoque en la simplicidad y el rendimiento?
+		 Angular.   
+		 React.   
+		 Vue.  
+¿Cuál es la ventaja principal de utilizar AJAX (Asynchronous JavaScript and XML) para la generación dinámica de interfaces?
+		 Permite la creación de interfaces de usuario utilizando componentes reutilizables.   
+		 Facilita la comunicación bidireccional y persistente entre el cliente y el servidor en tiempo real.   
+		 Permite a las páginas web enviar y recibir datos del servidor de forma asíncrona, actualizando partes de la página sin necesidad de recargarla completamente.  
+¿Cuál es la función principal de frameworks de CSS como Bootstrap y Tailwind CSS en el desarrollo web moderno?
+		 Facilitar la manipulación del DOM y la gestión de eventos del lado del cliente.   
+		 Facilitar el diseño responsive para asegurar que las aplicaciones web funcionen bien en todos los dispositivos.  
+		 Proporcionar funcionalidades para el manejo del estado de la aplicación en frameworks de JavaScript.   
+¿Qué tecnología proporciona una conexión persistente y bidireccional entre el cliente y el servidor, siendo ideal para aplicaciones que requieren una actualización constante de datos, como juegos en línea o chats?
+		 APIs RESTful.   
+		 AJAX.   
+		 WebSockets.  
+En el contexto de un proyecto de "Tienda en línea" que utiliza interfaces web dinámicas, ¿qué característica principal se implementaría utilizando AJAX para una actualización en tiempo real?
+		 La visualización de productos en 3D para mejorar la decisión de compra.   
+		 Las recomendaciones personalizadas basadas en el historial de navegación.   
+		 La búsqueda dinámica y los filtros para actualizar la lista de productos en tiempo real.  
+¿Qué concepto clave en la generación dinámica de interfaces se refiere a la capacidad de una aplicación web de actualizar la interfaz con información relevante para cada usuario, basándose en sus preferencias o historial de navegación?
+		 Interactividad.   
+		 Datos en Tiempo Real.   
+		 Personalización.  
+¿Qué atributo de seguridad en cookies ayuda a prevenir que JavaScript acceda a ellas, reduciendo el riesgo de robo de sesión en ataques XSS?
+		 Secure.   
+		 SameSite.   
+		 HttpOnly.  
+En el contexto de la seguridad de aplicaciones web, ¿cuál es la distinción clave entre autenticación y autorización?
+		 La autenticación establece los permisos de un usuario, mientras que la autorización verifica su identidad.   
+		 Ambas son sinónimos y se refieren al proceso de otorgar acceso a los usuarios.   
+		 La autenticación verifica la identidad de un usuario, mientras que la autorización determina los permisos y privilegios de ese usuario una vez autenticado.  
+¿Cuál es el objetivo principal de las pruebas de integración en el desarrollo de aplicaciones web?
+		 Verificar la funcionalidad de los componentes individuales de forma aislada.   
+		 Evaluar la facilidad de uso y la experiencia del usuario con la aplicación.   
+		 Evaluar cómo diferentes módulos o servicios de la aplicación interactúan entre sí, centrándose en las interfaces y puntos de integración.  
+¿Qué componente del directorio LDAP define los tipos de objetos y atributos que pueden existir en el directorio y garantiza la consistencia de los datos?
+		 La Raíz del Árbol (Root DIT).   
+		 Las Unidades Organizativas (OUs).   
+		 El Esquema LDAP.  
+¿Cuál es el propósito principal de OAuth, y cómo se relaciona con los tokens de acceso?
+		 OAuth es un protocolo de autorización que permite a las aplicaciones obtener acceso limitado a los recursos del usuario en otros servicios sin compartir credenciales, utilizando tokens de acceso que otorgan permisos específicos.  
+		 OAuth es un protocolo de autenticación descentralizado que permite a los usuarios iniciar sesión en múltiples servicios con una sola cuenta, generando tokens para verificación.   
+		 OAuth es un mecanismo para cifrar la comunicación entre cliente y servidor, donde los tokens de acceso sirven como claves de cifrado.   
+Dada la naturaleza del protocolo HTTP, ¿por qué es fundamental el mantenimiento del estado en las aplicaciones web?
+		 HTTP fue diseñado para ser escalable, lo que inherentemente soporta el estado entre peticiones.   
+		 HTTP es un protocolo sin estado, lo que significa que no mantiene información de solicitudes anteriores, haciendo necesario el uso de técnicas adicionales para recordar a los usuarios.  
+		 El mantenimiento del estado es una optimización de rendimiento que reduce el número de solicitudes al servidor.   
+Una práctica de seguridad esencial para las sesiones es la regeneración de identificadores de sesión. ¿Cuándo se recomienda realizar esta regeneración?
+		 Después de cada solicitud HTTP para garantizar la máxima seguridad.   
+		 Después de un cambio significativo en el nivel de acceso del usuario, como el inicio o cierre de sesión, para prevenir el secuestro de sesión.  
+		 Únicamente cuando la sesión ha expirado por inactividad.   
+¿Cuáles son los tres pilares fundamentales en los que se basa la seguridad en aplicaciones web, conocidos colectivamente como el triángulo CIA?
+		 Confianza, Integridad y Auditabilidad.   
+		 Confidencialidad, Integridad y Disponibilidad.  
+		 Control, Identificación y Acceso.   
+En el flujo de autenticación de OpenID, ¿cuál es el papel principal del Proveedor de Identidad (IdP)?
+		 Es el sitio web que solicita al usuario iniciar sesión con OpenID.   
+		 Es el servicio que gestiona y almacena las identidades de los usuarios y realiza la verificación de su identidad.  
+		 Es el componente que genera el URL de identidad único para cada usuario.   
+En aplicaciones distribuidas o de gran escala, ¿qué técnica avanzada de control de sesiones se utiliza para mantener la coherencia de las sesiones a través de múltiples servidores?
+		 La regeneración de identificadores de sesión después de cada solicitud.   
+		 La federación de sesiones para permitir que los usuarios accedan a múltiples aplicaciones sin autenticación repetida.   
+		 El uso de almacenes de sesiones centralizados o sistemas de caché en memoria (como Redis) para persistir las sesiones a través de servidores.  
+¿Cuál de las siguientes técnicas de optimización de conexiones a bases de datos implica mantener un conjunto de conexiones preestablecidas que se pueden reutilizar para múltiples solicitudes, en lugar de abrir y cerrar una conexión para cada operación?
+		 Lazy loading.   
+		 Caching de consultas.   
+		 Uso de pool de conexiones.  
+¿Cuál es una de las ventajas clave de utilizar PreparedStatement en Java para ejecutar consultas SQL?
+		 Permite la ejecución directa de procedimientos almacenados sin necesidad de un CallableStatement.   
+		 Mejora la seguridad al prevenir ataques de inyección de SQL y optimiza el rendimiento al permitir la reutilización de consultas compiladas.  
+		 Es la única forma de manipular un ResultSet actualizable directamente a través de JDBC.   
+En la gestión de una transacción de base de datos, si alguna de las operaciones dentro de la transacción falla o se encuentra un error, ¿qué acción se debe realizar para devolver la base de datos a su estado inicial?
+		 Commit, para asegurar que las operaciones se apliquen de forma permanente, independientemente del error.   
+		 Rollback, para deshacer todas las operaciones realizadas durante la transacción.  
+		 Savepoint, para marcar un punto intermedio al que se pueda volver.   
+En el contexto de Java Database Connectivity (JDBC), ¿qué representa un ResultSet y cómo se obtiene principalmente?
+		 Es un objeto que encapsula la conexión activa a la base de datos y se obtiene mediante DriverManager.getConnection().   
+		 Es un conjunto de sentencias SQL precompiladas que se obtiene de Connection.prepareStatement() para mejorar el rendimiento.   
+		 Es una estructura de datos que almacena el resultado obtenido de una consulta SQL de tipo SELECT, y se obtiene al ejecutar dicha consulta.  
+Al ejecutar sentencias UPDATE o DELETE en una base de datos, ¿qué precaución es crítica para evitar cambios masivos o pérdidas de datos no deseadas?
+		 Usar sentencias preparadas para que el motor valide automáticamente todas las entradas.   
+		 Realizar un COMMIT tras cada operación para evitar inconsistencias.   
+		 Incluir correctamente la cláusula WHERE para limitar los registros afectados.  
+Para prevenir eficazmente los ataques de inyección de SQL, una de las medidas más importantes y recomendadas es:
+		 Validar exhaustivamente todas las entradas del usuario únicamente en el lado del cliente (navegador).   
+		 Utilizar sentencias preparadas, ya que separan los datos de las instrucciones SQL, evitando que las entradas malintencionadas se interpreten como código.  
+		 Configurar el servidor de base de datos para que rechace cualquier consulta que contenga el carácter de comilla simple (').   
+Dentro de las propiedades ACID que rigen las transacciones en bases de datos, ¿a qué se refiere la "Atomicidad" (Atomicity)?
+		 Asegura que, una vez que una transacción se ha completado, sus efectos son permanentes en la base de datos.   
+		 Determina cómo la ejecución de una transacción puede ser visible para otras transacciones, previniendo interferencias.   
+		 Asegura que todas las operaciones dentro de la transacción se realizan completamente o ninguna; si alguna parte falla, toda la transacción se revierte.  
+Cuando una aplicación web necesita integrar información de un sistema externo como un servicio de pronóstico meteorológico o una plataforma de opiniones, ¿qué mecanismo se menciona como una forma potente y flexible de acceder a estos datos?
+		 Acceso directo a archivos locales (CSV, XML, JSON) almacenados en el servidor web.   
+		 El uso de APIs (Application Programming Interfaces) y servicios web, como las APIs RESTful.  
+		 La integración mediante plugins o módulos específicos proporcionados por un CMS (Sistema de Gestión de Contenido).   
+¿Cuál es el propósito de la serialización en el desarrollo web?
+		 Proteger la información mediante cifrado automático antes de enviarla al cliente.   
+		 Mejorar el rendimiento de la base de datos almacenando consultas en caché.   
+		 Transformar objetos en formatos como JSON o XML para almacenarlos o transmitirlos, y reconstruirlos después.  
+Un riesgo de seguridad significativo asociado con la serialización, si no se maneja con cuidado, es:
+		 El aumento del consumo de ancho de banda debido al mayor tamaño de los datos serializados.   
+		 La dificultad de depurar el código cuando los objetos están serializados.   
+		 Las vulnerabilidades como ataques de inyección de código que pueden surgir al deserializar datos no confiables o maliciosos.  
+Al diseñar la arquitectura de un servicio web, el requisito no funcional de "Escalabilidad" se refiere principalmente a:
+		 El tiempo de respuesta aceptable que el servicio debe mantener bajo condiciones normales de uso.   
+		 La facilidad con la que el servicio puede ser actualizado y mantenido a lo largo del tiempo.   
+		 La capacidad del servicio para manejar cargas de trabajo elevadas y picos de tráfico, adaptándose a un aumento en la demanda.  
+En la estructura de un mensaje SOAP, ¿cuál es el elemento raíz obligatorio que encapsula todos los demás elementos y define el inicio y el final del mensaje?
+		 Header.   
+		 Body.   
+		 Envelope.  
+¿Cuál es una diferencia fundamental entre SOAP y REST?
+		 SOAP utiliza siempre JSON, mientras que REST solo permite XML.   
+		 SOAP intercambia mensajes en XML con un estándar estricto, mientras que REST se basa en HTTP y suele usar formatos más ligeros como JSON.  
+		 SOAP es más simple y eficiente que REST en la mayoría de los casos.   
+Al implementar las operaciones básicas de un servicio web, ¿qué es crucial al definir y diseñar los "Endpoints"?
+		 Asegurarse de que todos los endpoints utilicen únicamente el método HTTP GET para simplificar la interfaz.   
+		 Priorizar la implementación de la lógica de negocio antes de definir la estructura de la URL y los parámetros.   
+		 Definir claramente la estructura de la URL, los parámetros esperados y el formato de respuesta para cada operación, asociándolos con el método HTTP (GET, POST, PUT, DELETE) adecuado.  
+Al implementar operaciones básicas que requieren interacción con una base de datos, ¿qué herramienta o técnica se menciona como una forma de facilitar esta interacción al permitir trabajar con objetos en el código que se mapean a las tablas de la base de datos?
+		 La creación manual de conexiones individuales y consultas SQL para cada operación para maximizar el control.   
+		 La configuración de un pool de conexiones para asegurar la integridad de los datos en transacciones complejas.   
+		 El uso de un ORM (Object-Relational Mapping) para simplificar el desarrollo y mantener el código más limpio.  
+En cuanto a la seguridad, ¿cuál es una diferencia clave entre XML-RPC y SOAP?
+		 Ambos protocolos tienen mecanismos de seguridad integrados, siendo XML-RPC el más robusto gracias a sus especificaciones avanzadas.   
+		 SOAP no tiene un mecanismo de seguridad integrado y debe usar HTTPS, mientras que XML-RPC puede integrar seguridad a nivel de mensaje mediante WS-Security.   
+		 XML-RPC no tiene un mecanismo de seguridad integrado y su seguridad debe manejarse a través de otros medios como HTTPS, a diferencia de SOAP que puede integrar seguridad a nivel de mensaje mediante WS-Security.  
+Además de la encriptación mediante HTTPS, ¿qué mecanismo se utiliza comúnmente en los servicios RESTful para verificar la identidad de los usuarios y controlar el acceso a los recursos del servicio web?
+		 El estándar WS-Security para proporcionar mecanismos de autenticación a nivel de mensaje.   
+		 La validación estricta de las entradas del usuario solo en el lado del cliente (navegador).   
+		 Los tokens de autenticación, como JWT (JSON Web Tokens), para la verificación de la identidad y el control de acceso.  
+¿Cuál es una ventaja clave que hace que JSON sea ampliamente utilizado en los servicios web modernos, especialmente en los servicios RESTful, en comparación con XML?
+		 JSON ofrece una mayor capacidad para definir esquemas y estructuras de datos complejas de forma detallada.   
+		 JSON es el formato preferido para servicios basados en SOAP debido a su naturaleza auto-descriptiva.   
+		 JSON es un formato ligero, más fácil de leer y escribir para los humanos y más eficiente de analizar y generar para las máquinas, lo que optimiza la transmisión de datos.  
+¿Por qué se considera la documentación de la API un componente crítico en la descripción de un servicio web?
+		 Su propósito principal es monitorear el rendimiento del servicio y registrar los errores en tiempo real.   
+		 Porque es una guía técnica esencial que explica cómo interactuar con el servicio, detallando los endpoints, métodos, parámetros de entrada, formatos de respuesta y posibles códigos de error, facilitando su integración y uso efectivo.  
+		 Su objetivo principal es aplicar políticas de seguridad y cumplimiento normativo de forma automática.   
+¿Cuál es la función principal de un documento WSDL (Web Services Description Language) en el contexto de los servicios web?
+		 Su principal función es cifrar los mensajes de seguridad en los servicios web para proteger los datos sensibles.   
+		 Es un protocolo que facilita la comunicación y el intercambio de datos entre sistemas a través de Internet, utilizando XML para codificar llamadas y HTTP para el transporte.   
+		 Es un formato basado en XML que describe cómo se pueden invocar los servicios web, especificando qué parámetros requieren y qué datos devuelven, sirviendo como un contrato formal de la interfaz del servicio.  
+¿Qué mecanismo garantiza la seguridad y privacidad de los datos en transacciones en línea?
+		 AJAX para cargar datos de forma asíncrona.   
+		 WebSockets para comunicación en tiempo real.   
+		 El uso de HTTPS, que cifra la comunicación y asegura la identidad del servidor.  
+¿Cuál es una característica clave de React que facilita la creación de interfaces de usuario complejas y dinámicas, manteniendo el código organizado y eficiente?
+		 Su arquitectura opinionada y fuerte dependencia de TypeScript.   
+		 Su enfoque en componentes reutilizables y el uso de un Virtual DOM.  
+		 Su capacidad de ser introducido gradualmente en proyectos existentes.   
+Node.js ha transformado el desarrollo web al:
+		 Simplificar principalmente la manipulación del DOM y las llamadas AJAX en el lado del cliente.   
+		 Ser un framework de alto nivel para el desarrollo rápido de aplicaciones empresariales utilizando Python.   
+		 Permitir el uso de JavaScript en el lado del servidor, unificando así el desarrollo de frontend y backend.  
+¿Cuál es una distinción fundamental entre las Bases de Datos Relacionales (como MySQL) y las Bases de Datos NoSQL (como MongoDB)?
+		 Las bases de datos relacionales están diseñadas para análisis de datos en tiempo real, mientras que las NoSQL son para el registro tradicional de datos.   
+		 Las bases de datos relacionales utilizan un esquema fijo y son ideales para datos que requieren integridad referencial y transacciones complejas, mientras que las bases de datos NoSQL ofrecen flexibilidad de esquema y son adecuadas para grandes volúmenes de datos y escalabilidad horizontal.  
+		 Las bases de datos NoSQL priorizan la consistencia estricta de los datos sobre la disponibilidad, a diferencia de las relacionales.   
+¿Qué característica es típica de una Aplicación de Una Sola Página (SPA) y es soportada por frameworks como React o Angular?
+		 Recargas completas frecuentes de la página para actualizar el contenido.   
+		 Manejar la navegación entre diferentes vistas y estados sin requerir una recarga completa de la página.  
+		 El uso exclusivo de archivos HTML estáticos para la entrega de contenido.   
+¿Cuál es el propósito principal de AJAX (Asynchronous JavaScript and XML) en la generación dinámica de páginas web interactivas?
+		 Definir la estructura de las operaciones y tipos de datos de un servicio web mediante XML.   
+		 Establecer un canal de comunicación persistente y bidireccional entre el cliente y el servidor para actualizaciones en tiempo real.   
+		 Permitir que partes de una página web se actualicen de manera asincrónica, intercambiando datos con el servidor sin necesidad de recargar la página completa.  
+¿Qué es el Document Object Model (DOM) y por qué es crucial su manipulación en el desarrollo web moderno?
+		 Es un protocolo para la transferencia segura de datos a través de Internet, habilitando la comunicación cifrada.   
+		 Es un lenguaje de programación utilizado para construir aplicaciones del lado del servidor y APIs.   
+		 Es una representación estructurada de los elementos HTML de una página web, y su manipulación dinámica permite cambiar el contenido, la estructura y el estilo de la página en tiempo real, mejorando la interactividad.  
+En la colaboración entre el frontend y el backend para la interactividad web, ¿cuál es el rol principal del backend?
+		 Manejar directamente la interfaz de usuario y las interacciones directas del usuario.   
+		 Gestionar el enrutamiento del lado del cliente y optimizar la carga de imágenes.   
+		 Procesar las interacciones del usuario, acceder a las bases de datos y devolver los resultados al frontend.  
+¿Qué framework de backend es conocido por su enfoque de "baterías incluidas" y es ampliamente utilizado con Python para el desarrollo rápido de aplicaciones empresariales seguras y mantenibles?
+		 Express.js   
+		 Ruby on Rails   
+		 Django  
+¿Qué ventaja tiene GraphQL frente a REST?
+		 Permite a los clientes pedir exactamente los datos que necesitan, reduciendo la transferencia innecesaria.  
+		 Sustituye automáticamente los mecanismos de seguridad en servicios web.   
+		 Solo sirve para operaciones CRUD simples.   
+¿Cuál es una característica clave de la arquitectura de microservicios que la hace ventajosa para las aplicaciones web híbridas?
+		 Agrupa todas las funcionalidades de la aplicación en una única unidad monolítica para simplificar el mantenimiento.   
+		 Permite una gran modularidad y reutilización, facilitando la escalabilidad y el mantenimiento al ser unidades funcionales de software independientes.  
+		 Su principal uso es para el control de versiones del código fuente.   
+¿Cuál es la razón principal por la que la integración de RSS y Atom es considerada vital en las aplicaciones web híbridas?
+		 Para gestionar la autenticación y autorización de usuarios de forma segura.   
+		 Para facilitar la distribución y actualización eficiente del contenido, permitiendo a los usuarios mantenerse informados de múltiples fuentes y mejorando la experiencia.  
+		 Para optimizar el rendimiento de las consultas a bases de datos NoSQL.   
+Para el desarrollo de la interactividad del usuario, incluyendo formularios dinámicos y elementos UI interactivos en aplicaciones web híbridas, ¿qué tecnologías son mencionadas como esenciales en el contenido del curso?
+		 Lenguajes de backend como PHP y Python junto con bases de datos como MySQL.   
+		 Tecnologías como JavaScript, AJAX y frameworks de frontend como React o Vue.js.  
+		 Herramientas de despliegue y orquestación de contenedores como Docker y Kubernetes.   
+¿Cuál de las siguientes afirmaciones NO es una ventaja directa de la reutilización de código e información en el desarrollo de aplicaciones web híbridas?
+		 Mejora de la colaboración entre equipos al compartir componentes comunes.   
+		 Aumento significativo del consumo de recursos para el desarrollo debido a la complejidad de la integración.  
+		 Reducción de errores y mayor estabilidad en la aplicación final al usar componentes probados.   
+¿Cuál es la función principal de UDDI en el desarrollo de aplicaciones web híbridas?
+		 Ofrecer una solución de almacenamiento masivo y distribuido para datos en la nube.    
+		 Proporcionar un sistema de gestión de contenidos para blogs y sitios web.   
+		 Actuar como un estándar basado en XML para listar y descubrir servicios web, facilitando su integración y mejorando la interoperabilidad.  
+¿Qué característica clave ofrecen plataformas como GitHub, GitLab o Bitbucket en la gestión de código?
+		 Administración de bases de datos relacionales con integridad referencial.   
+		 Control de versiones distribuido con funcionalidades como branching, forking y pull requests.  
+		 Monitoreo en tiempo real de servicios web externos.   
+Al abordar la gestión de repositorios de datos en aplicaciones web híbridas, ¿qué se destaca como un aspecto crucial para garantizar la seguridad de la información sensible?
+		 La implementación de un esquema fijo estricto para todas las bases de datos relacionales.   
+		 La preferencia por bases de datos NoSQL para todos los casos de uso debido a su escalabilidad horizontal.   
+		 La importancia de la encriptación y el control de acceso, junto con buenas prácticas como respaldos regulares y el mantenimiento de la integridad de los datos.  
+Dentro del Modelo de Datos UDDI, ¿qué información se almacena específicamente en las "Green Pages"?
+		 La clasificación de servicios por categorías, similar a un directorio sectorial.   
+		 Los detalles de contacto y la información básica del proveedor del servicio.   
+		 Información técnica detallada sobre los servicios, incluyendo enlaces a especificaciones y puntos de acceso.  
+Comparando RSS y Atom, ¿cuál de las siguientes afirmaciones describe correctamente una diferencia clave entre ellos?
+		 RSS fue diseñado para ser más extensible y poderoso en cuanto a capacidades de metadatos que Atom.   
+		 Atom ofrece una estructura más flexible y robusta, con mejor soporte para metadatos y la capacidad de soportar actualizaciones de contenido en el mismo feed, a diferencia de RSS.  
+		 RSS es el estándar más moderno y con capacidades más avanzadas para el intercambio de datos en APIs web.   
+En el contexto de la optimización del desarrollo de aplicaciones web híbridas, ¿cuál es el papel fundamental de frameworks como React, Vue.js y Angular?
+		 Son principalmente herramientas para la gestión de bases de datos NoSQL en el backend.   
+		 Permiten a los desarrolladores construir componentes reutilizables que pueden funcionar tanto en entornos web como nativos, mejorando la eficiencia y la mantenibilidad.  
+		 Su función principal es la automatización del despliegue y monitoreo de aplicaciones en servidores dedicados.   
