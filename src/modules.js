@@ -52,54 +52,63 @@ export const modules = [
   {
     id: "despliegue",
     title: "Despliegue de aplicaciones web",
+    icon: "🚀",
     questions,
     questionSets: buildQuestionSets("despliegue", questions)
   },
   {
     id: "servidor",
     title: "Desarrollo web en entorno servidor",
+    icon: "⚙️",
     questions: questionsServidor,
     questionSets: buildQuestionSets("servidor", questionsServidor)
   },
   {
     id: "cliente",
     title: "Desarrollo web entorno cliente",
+    icon: "🎨",
     questions: questionsCliente,
     questionSets: buildQuestionSets("cliente", questionsCliente)
   },
   {
     id: "digitalizacion",
     title: "Digitalizacion aplicada a los sectores productivos",
+    icon: "💡",
     questions: questionsDigitalizacion,
     questionSets: buildQuestionSets("digitalizacion", questionsDigitalizacion)
   },
   {
     id: "diseno-interfaces",
     title: "Diseno de interfaces web",
+    icon: "🖌️",
     questions: questionsDisenoInterfaces,
     questionSets: buildQuestionSets("diseno-interfaces", questionsDisenoInterfaces)
   },
   {
     id: "empleabilidad-ii",
     title: "Empleabilidad II",
+    icon: "💼",
     questions: questionsEmpleabilidad2,
     questionSets: buildQuestionSets("empleabilidad-ii", questionsEmpleabilidad2)
   },
   {
     id: "python-optativo",
     title: "Modulo optativo de Python",
+    icon: "🐍",
     questions: questionsPythonOptativo,
     questionSets: buildQuestionSets("python-optativo", questionsPythonOptativo)
   },
   {
     id: "sostenibilidad",
     title: "Sostenibilidad aplicada a los sectores productivos",
+    icon: "🌱",
     questions: questionsSostenibilidad,
     questionSets: buildQuestionSets("sostenibilidad", questionsSostenibilidad)
   },
   {
     id: "ingles-profesional",
     title: "Ingles profesional",
+    icon: "🌐",
     questions: questionsInglesProfesional,
     questionSets: buildQuestionSets("ingles-profesional", questionsInglesProfesional)
   }

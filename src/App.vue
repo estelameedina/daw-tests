@@ -50,6 +50,20 @@ const activeQuestionSet = computed(() => {
   return sets.find((set) => set.id === activeQuestionSetId.value) || sets[0];
 });
 
+const currentView = ref("home");
+
+function selectModule(moduleId) {
+  activeModuleId.value = moduleId;
+  activeQuestionSetId.value = modules.find((m) => m.id === moduleId).questionSets?.[0]?.id || "general";
+  currentView.value = "test";
+  resetQuiz();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function goHome() {
+  currentView.value = "home";
+}
+
 const exam = ref(buildExam(activeQuestionSet.value.questions));
 const currentQuestionIndex = ref(0);
 const answers = ref({});
@@ -256,57 +270,81 @@ function toggleHistory() {
 
 <template>
   <main class="page">
-    <section class="study-hero">
-      <div>
+    <template v-if="currentView === 'home'">
+      <section class="home-hero">
         <p class="eyebrow">TIPO TEST</p>
         <h1>TEST DAW</h1>
-        <div class="hero-modules">
-          <div class="module-switcher">
-            <button
-              v-for="module in modules"
-              :key="module.id"
-              type="button"
-              class="module-button"
-              :class="module.id === activeModuleId ? 'active' : ''"
-              @click="switchModule(module.id)"
-            >
-              {{ module.title }}
-            </button>
-          </div>
-          <div v-if="activeModule.questionSets?.length > 1" class="question-set-switcher" aria-label="Tipo de test">
-            <button
-              v-for="set in activeModule.questionSets"
-              :key="set.id"
-              type="button"
-              class="question-set-button"
-              :class="set.id === activeQuestionSetId ? 'active' : ''"
-              @click="switchQuestionSet(set.id)"
-            >
-              {{ set.title }}
-            </button>
-          </div>
-        </div>
-        <div class="intro-actions">
-          <button type="button" @click="scrollToTest">Empezar test</button>
-          <button type="button" class="secondary" @click="toggleHistory">
-            {{ showHistory ? 'Cerrar historial' : 'Ver historial' }}
+        <p class="muted">Selecciona un módulo para empezar a practicar</p>
+        <div class="module-grid">
+          <button
+            v-for="module in modules"
+            :key="module.id"
+            class="module-card"
+            @click="selectModule(module.id)"
+          >
+            <span class="module-card-icon">{{ module.icon }}</span>
+            <span class="module-card-title">{{ module.title }}</span>
+            <span class="module-card-count">{{ module.questions.length }} preguntas</span>
           </button>
         </div>
+      </section>
+      <div class="home-actions">
+        <button type="button" class="secondary" @click="toggleHistory">
+          {{ showHistory ? 'Cerrar historial' : 'Ver historial' }}
+        </button>
       </div>
+    </template>
 
-      <div class="hero-panel">
-        <span class="panel-label">Ahora mismo</span>
-        <strong>{{ activeModule.title }}</strong>
-        <span>{{ activeQuestionSet.title }}</span>
-        <div class="hero-stats">
-          <span>{{ totalAttempts }} intentos</span>
-          <span v-if="globalBestAttempt">{{ globalBestAttempt.porcentaje }}% mejor nota</span>
-          <span v-else>Sin notas todavía</span>
+    <template v-else>
+      <section class="study-hero">
+        <div>
+          <button type="button" class="back-button" @click="goHome">&larr; Volver</button>
+          <div class="hero-modules">
+            <div class="module-switcher">
+              <button
+                v-for="module in modules"
+                :key="module.id"
+                type="button"
+                class="module-button"
+                :class="module.id === activeModuleId ? 'active' : ''"
+                @click="switchModule(module.id)"
+              >
+                {{ module.title }}
+              </button>
+            </div>
+            <div v-if="activeModule.questionSets?.length > 1" class="question-set-switcher" aria-label="Tipo de test">
+              <button
+                v-for="set in activeModule.questionSets"
+                :key="set.id"
+                type="button"
+                class="question-set-button"
+                :class="set.id === activeQuestionSetId ? 'active' : ''"
+                @click="switchQuestionSet(set.id)"
+              >
+                {{ set.title }}
+              </button>
+            </div>
+          </div>
+          <div class="intro-actions">
+            <button type="button" class="secondary" @click="toggleHistory">
+              {{ showHistory ? 'Cerrar historial' : 'Ver historial' }}
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <section class="card">
+        <div class="hero-panel">
+          <span class="panel-label">Ahora mismo</span>
+          <strong>{{ activeModule.title }}</strong>
+          <span>{{ activeQuestionSet.title }}</span>
+          <div class="hero-stats">
+            <span>{{ totalAttempts }} intentos</span>
+            <span v-if="globalBestAttempt">{{ globalBestAttempt.porcentaje }}% mejor nota</span>
+            <span v-else>Sin notas todavía</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
       <section id="test-section">
       <div class="mobile-selectors">
         <label>
@@ -427,6 +465,7 @@ function toggleHistory() {
       </section>
       </section>
     </section>
+    </template>
 
     <transition name="slide">
       <section v-if="showHistory" class="card history-card">
