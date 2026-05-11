@@ -56,7 +56,58 @@ input {
 
 .home-hero {
   text-align: center;
-  padding: 2rem 1rem 1.5rem;
+  padding: 2.5rem 1rem 2rem;
+  min-height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.2rem;
+  margin-top: 2rem;
+  max-width: 1100px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.module-card {
+  display: grid;
+  gap: 0.6rem;
+  padding: 2rem 1.8rem;
+  border: 1px solid #d8d0c8;
+  border-radius: 16px;
+  background: #ffffff;
+  cursor: pointer;
+  text-align: left;
+  min-height: 170px;
+  align-content: center;
+  transition: box-shadow 0.2s, border-color 0.2s, transform 0.15s;
+}
+
+.module-card:hover {
+  border-color: #e8806a;
+  box-shadow: 0 10px 30px #1a274418;
+  transform: translateY(-3px);
+}
+
+.module-card-icon {
+  font-size: 2.4rem;
+  line-height: 1;
+}
+
+.module-card-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #1a2744;
+}
+
+.module-card-count {
+  font-size: 0.9rem;
+  color: #4a5568;
 }
 
 .home-hero h1 {
