@@ -20,7 +20,188 @@ import { mockExamQuestionsPythonOptativo } from "./mockExamQuestionsPythonOptati
 // - Puedes poner mas de 3 opciones si el simulacro original las tiene.
 
 export const mockExamQuestionsByModule = {
-  despliegue: [],
+  despliegue: [
+    {
+      id: "sim-despliegue-1",
+      text: "¿Cuál es la función principal de un servidor web?",
+      options: ["Almacenar bases de datos", "Ejecutar aplicaciones móviles", "Servir contenido web a los usuarios", "Diseñar páginas web"],
+      correct: "Servir contenido web a los usuarios"
+    },
+    {
+      id: "sim-despliegue-2",
+      text: "¿Qué protocolo se utiliza para transferir páginas web de forma segura?",
+      options: ["FTP", "HTTP", "HTTPS", "SMTP"],
+      correct: "HTTPS"
+    },
+    {
+      id: "sim-despliegue-3",
+      text: "¿Cuál de los siguientes servidores web es conocido por su eficiencia con alto tráfico?",
+      options: ["Apache", "Nginx", "IIS", "Tomcat"],
+      correct: "Nginx"
+    },
+    {
+      id: "sim-despliegue-4",
+      text: "¿Qué archivo se utiliza para configurar Apache?",
+      options: ["web.config", "httpd.conf", "nginx.ini", "server.cfg"],
+      correct: "httpd.conf"
+    },
+    {
+      id: "sim-despliegue-5",
+      text: "¿Qué directiva en Apache mejora la velocidad de conexiones recurrentes?",
+      options: ["KeepAlive", "Listen", "Master", "ServerPath"],
+      correct: "KeepAlive"
+    },
+    {
+      id: "sim-despliegue-6",
+      text: "¿Dónde se configura Nginx?",
+      options: ["web.xml", "nginx.conf", "hosts", "proconfig"],
+      correct: "nginx.conf"
+    },
+    {
+      id: "sim-despliegue-7",
+      text: "¿Qué herramienta permite mejorar la velocidad mediante caché?",
+      options: ["Docker", "Git", "Varnish", "Jenkins"],
+      correct: "Varnish"
+    },
+    {
+      id: "sim-despliegue-8",
+      text: "¿Qué es un host virtual?",
+      options: ["Un servidor físico", "Un dominio en la nube", "Una técnica para alojar varios sitios en un servidor", "Un tipo de firewall"],
+      correct: "Una técnica para alojar varios sitios en un servidor"
+    },
+    {
+      id: "sim-despliegue-9",
+      text: "¿Qué comando se usa para activar un sitio en Apache?",
+      options: ["a2ensite", "enablehost", "startsite", "apache-on"],
+      correct: "a2ensite"
+    },
+    {
+      id: "sim-despliegue-10",
+      text: "¿Cuál es la función de \"DocumentRoot\"?",
+      options: ["Definir el dominio", "Establecer el directorio raíz del sitio web", "Activar SSL", "Gestionar usuarios"],
+      correct: "Establecer el directorio raíz del sitio web"
+    },
+    {
+      id: "sim-despliegue-11",
+      text: "¿Qué significa SSL/TLS?",
+      options: ["Protocolos de almacenamiento", "Protocolos de seguridad para comunicación", "Sistemas de caché", "Tipos de servidores"],
+      correct: "Protocolos de seguridad para comunicación"
+    },
+    {
+      id: "sim-despliegue-12",
+      text: "¿Qué herramienta se usa para monitorizar servidores?",
+      options: ["Wireshark", "Nagios", "Eclipse", "WordPress"],
+      correct: "Nagios"
+    },
+    {
+      id: "sim-despliegue-13",
+      text: "¿Qué es la autenticación?",
+      options: ["Asignar permisos", "Verificar la identidad de un usuario", "Filtrar datos", "Crear usuarios"],
+      correct: "Verificar la identidad de un usuario"
+    },
+    {
+      id: "sim-despliegue-14",
+      text: "¿Cuál es el método de autenticación más común?",
+      options: ["Biométrico", "Token", "Contraseña", "Certificado"],
+      correct: "Contraseña"
+    },
+    {
+      id: "sim-despliegue-15",
+      text: "¿Qué añade la autenticación de dos factores (2FA)?",
+      options: ["Mayor velocidad", "Menos seguridad", "Una capa extra de seguridad", "Más capacidad"],
+      correct: "Una capa extra de seguridad"
+    },
+    {
+      id: "sim-despliegue-16",
+      text: "¿Qué es el control de acceso?",
+      options: ["Verificar identidad", "Gestionar permisos de usuarios", "Crear servidores", "Comprimir datos"],
+      correct: "Gestionar permisos de usuarios"
+    },
+    {
+      id: "sim-despliegue-17",
+      text: "¿Qué modelo asigna permisos según el rol del usuario?",
+      options: ["DAC", "MAC", "RBAC", "ACL"],
+      correct: "RBAC"
+    },
+    {
+      id: "sim-despliegue-18",
+      text: "¿Qué modelo permite al propietario decidir quién accede?",
+      options: ["MAC", "RBAC", "DAC", "LDAP"],
+      correct: "DAC"
+    },
+    {
+      id: "sim-despliegue-19",
+      text: "¿Qué mejora el rendimiento reduciendo el tamaño de los datos?",
+      options: ["Firewall", "Compresión", "Backup", "Autenticación"],
+      correct: "Compresión"
+    },
+    {
+      id: "sim-despliegue-20",
+      text: "¿Qué estrategia implica añadir más servidores para soportar tráfico?",
+      options: ["Escalado vertical", "Escalado horizontal", "Balanceo simple", "Compresión"],
+      correct: "Escalado horizontal"
+    },
+    {
+      id: "sim-despliegue-21",
+      text: "¿Qué es un balanceador de carga?",
+      options: ["Un sistema de almacenamiento", "Un dispositivo que distribuye el tráfico entre varios servidores", "Un firewall avanzado", "Un gestor de bases de datos"],
+      correct: "Un dispositivo que distribuye el tráfico entre varios servidores"
+    },
+    {
+      id: "sim-despliegue-22",
+      text: "¿Cuál es el objetivo principal del balanceo de carga?",
+      options: ["Reducir el tamaño de los archivos", "Mejorar la seguridad del sistema", "Optimizar el uso de recursos y evitar sobrecargas", "Crear copias de seguridad"],
+      correct: "Optimizar el uso de recursos y evitar sobrecargas"
+    },
+    {
+      id: "sim-despliegue-23",
+      text: "¿Qué algoritmo de balanceo envía las peticiones de forma secuencial?",
+      options: ["Least Connections", "Round Robin", "Hashing", "Random"],
+      correct: "Round Robin"
+    },
+    {
+      id: "sim-despliegue-24",
+      text: "¿Qué algoritmo dirige el tráfico al servidor con menos conexiones activas?",
+      options: ["Round Robin", "FIFO", "Least Connections", "Balance dinámico"],
+      correct: "Least Connections"
+    },
+    {
+      id: "sim-despliegue-25",
+      text: "¿Qué es la alta disponibilidad (HA)?",
+      options: ["Uso de servidores antiguos", "Garantizar que el sistema esté siempre operativo", "Reducir costes de hardware", "Eliminar redundancia"],
+      correct: "Garantizar que el sistema esté siempre operativo"
+    },
+    {
+      id: "sim-despliegue-26",
+      text: "¿Qué elemento permite detectar fallos en servidores dentro de un clúster?",
+      options: ["Firewall", "Monitor de salud (health check)", "DNS", "Proxy"],
+      correct: "Monitor de salud (health check)"
+    },
+    {
+      id: "sim-despliegue-27",
+      text: "¿Qué es un clúster de servidores?",
+      options: ["Un único servidor potente", "Un conjunto de servidores que trabajan como uno solo", "Un tipo de red doméstica", "Un software de desarrollo"],
+      correct: "Un conjunto de servidores que trabajan como uno solo"
+    },
+    {
+      id: "sim-despliegue-28",
+      text: "¿Qué técnica permite repartir tráfico geográficamente?",
+      options: ["DNS Round Robin", "NAT", "VLAN", "RAID"],
+      correct: "DNS Round Robin"
+    },
+    {
+      id: "sim-despliegue-29",
+      text: "¿Qué ocurre si falla un servidor en un sistema con alta disponibilidad?",
+      options: ["El sistema se detiene", "Se pierden todos los datos", "Otro servidor asume la carga", "Se reinicia la red"],
+      correct: "Otro servidor asume la carga"
+    },
+    {
+      id: "sim-despliegue-30",
+      text: "¿Qué componente suele actuar como intermediario entre cliente y servidor?",
+      options: ["Switch", "Proxy", "Router", "Hub"],
+      correct: "Proxy"
+    }
+  ],
   servidor: [],
   cliente: mockExamQuestionsCliente,
   digitalizacion: [
