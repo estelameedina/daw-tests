@@ -67,8 +67,7 @@ function goHome() {
 const exam = ref(buildExam(activeQuestionSet.value.questions));
 const currentQuestionIndex = ref(0);
 const answers = ref({});
-const flaggedQuestions = ref({});
-const startTime = ref(Date.now());
+  const startTime = ref(Date.now());
 const finished = ref(false);
 const history = ref(readHistory());
 const showHistory = ref(false);
@@ -81,8 +80,6 @@ const currentQuestion = computed(() => exam.value[currentQuestionIndex.value] ||
 const currentQuestionNumber = computed(() => currentQuestionIndex.value + 1);
 const isFirstQuestion = computed(() => currentQuestionIndex.value === 0);
 const isLastQuestion = computed(() => currentQuestionIndex.value === total.value - 1);
-const flaggedCount = computed(() => Object.values(flaggedQuestions.value).filter(Boolean).length);
-
 const historyModuleOptions = computed(() => {
   const opts = [{ id: "all", title: "Todos los modulos" }];
   const ids = new Set(history.value.map((item) => item.moduleId).filter(Boolean));
@@ -134,8 +131,7 @@ const result = computed(() => {
       textoRespuestaUsuario: chosen ? optionMap[chosen] : null,
       respuestaCorrecta: q.correct,
       textoRespuestaCorrecta: q.correct ? optionMap[q.correct] : null,
-      esCorrecta: isCorrect,
-      marcadaParaRepasar: Boolean(flaggedQuestions.value[q.id])
+      esCorrecta: isCorrect
     };
   });
 
@@ -159,7 +155,6 @@ function saveAttempt() {
     total: total.value,
     porcentaje: result.value.porcentaje,
     duracionSeg: duration,
-    marcadasParaRepasar: result.value.details.filter((item) => item.marcadaParaRepasar).map((item) => item.preguntaId),
     respuestas: result.value.details
   };
   history.value = [attempt, ...history.value].slice(0, 50);
@@ -176,7 +171,6 @@ function resetQuiz() {
   exam.value = buildExam(activeQuestionSet.value.questions);
   currentQuestionIndex.value = 0;
   answers.value = {};
-  flaggedQuestions.value = {};
   startTime.value = Date.now();
   finished.value = false;
 }
@@ -197,13 +191,6 @@ function goToQuestion(index) {
   if (index >= 0 && index < total.value) {
     currentQuestionIndex.value = index;
   }
-}
-
-function toggleFlag(questionId) {
-  flaggedQuestions.value = {
-    ...flaggedQuestions.value,
-    [questionId]: !flaggedQuestions.value[questionId]
-  };
 }
 
 function switchModule(moduleId) {
@@ -335,7 +322,6 @@ function toggleHistory() {
       <div v-if="!finished" class="quiz-status">
         <div class="quiz-status-top">
           <span class="answered-pill">Contestadas: {{ answeredCount }} / {{ total }}</span>
-          <span class="answered-pill">Repasar: {{ flaggedCount }}</span>
         </div>
         <div class="progress-bar-track">
           <div class="progress-bar-fill" :style="{ width: (answeredCount / total * 100) + '%' }"></div>
@@ -348,8 +334,7 @@ function toggleHistory() {
             class="question-jump-button"
             :class="{
               active: index === currentQuestionIndex,
-              answered: answers[q.id],
-              flagged: flaggedQuestions[q.id]
+              answered: answers[q.id]
             }"
             @click="goToQuestion(index)"
           >
@@ -361,12 +346,7 @@ function toggleHistory() {
       <form v-if="!finished" @submit.prevent="submit">
         <transition name="fade-slide" mode="out-in">
           <article v-if="currentQuestion" :key="currentQuestion.id" class="question current-question">
-            <div class="question-meta">
-              <p class="question-kicker">Pregunta {{ currentQuestionNumber }} de {{ total }}</p>
-              <button type="button" class="flag-button" @click="toggleFlag(currentQuestion.id)">
-                {{ flaggedQuestions[currentQuestion.id] ? 'Quitar repaso' : 'Marcar repaso' }}
-              </button>
-            </div>
+            <p class="question-kicker">Pregunta {{ currentQuestionNumber }} de {{ total }}</p>
             <h2>{{ currentQuestion.text }}</h2>
             <label v-for="option in currentQuestion.options" :key="option.key" class="option">
               <input v-model="answers[currentQuestion.id]" type="radio" :name="currentQuestion.id" :value="option.key" />
@@ -426,7 +406,6 @@ function toggleHistory() {
             </p>
           </template>
           <p v-else class="correct-state"><strong>Correcta.</strong></p>
-          <p v-if="item.marcadaParaRepasar" class="flagged-note"><strong>Marcada para repasar.</strong></p>
         </article>
       </section>
     </section>
