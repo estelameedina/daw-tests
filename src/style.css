@@ -328,22 +328,25 @@ button:disabled {
 }
 
 .question-jump::-webkit-scrollbar {
-  height: 4px;
+  height: 6px;
 }
 
 .question-jump::-webkit-scrollbar-thumb {
-  background: #d8d0c8;
+  background: #c8c0b8;
   border-radius: 4px;
 }
 
 .question-jump-button {
-  width: 2.2rem;
-  height: 2.2rem;
-  min-height: 2.2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  min-height: 2.5rem;
   padding: 0;
   border: 1px solid #d8d0c8;
   background: #ffffff;
   color: #1a2744;
+  font-size: 0.95rem;
+  font-weight: 700;
+  flex-shrink: 0;
 }
 
 .question-jump-button.answered {
