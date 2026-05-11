@@ -1,7 +1,6 @@
-# Panel de repaso DAW (Vue + Vite)
+# TEST DAW
 
-Aplicacion web personal para practicar tests de modulos de DAW de forma independiente.
-Permite hacer preguntas una a una, separar simulacros por bloques, marcar dudas y consultar historial filtrado por modulo.
+App web para practicar examenes tipo test de DAW. Preguntas por modulo, simulacros por bloques, orden aleatorio e historial local.
 
 ## Objetivo del proyecto
 

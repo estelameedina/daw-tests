@@ -260,9 +260,32 @@ function toggleHistory() {
       <div>
         <p class="eyebrow">TIPO TEST</p>
         <h1>TEST DAW</h1>
-        <p class="muted">
-          Banco de preguntas por asignatura, simulacros separados en bloques manejables y seguimiento de intentos para ver dónde conviene insistir.
-        </p>
+        <div class="hero-modules">
+          <div class="module-switcher">
+            <button
+              v-for="module in modules"
+              :key="module.id"
+              type="button"
+              class="module-button"
+              :class="module.id === activeModuleId ? 'active' : ''"
+              @click="switchModule(module.id)"
+            >
+              {{ module.title }}
+            </button>
+          </div>
+          <div v-if="activeModule.questionSets?.length > 1" class="question-set-switcher" aria-label="Tipo de test">
+            <button
+              v-for="set in activeModule.questionSets"
+              :key="set.id"
+              type="button"
+              class="question-set-button"
+              :class="set.id === activeQuestionSetId ? 'active' : ''"
+              @click="switchQuestionSet(set.id)"
+            >
+              {{ set.title }}
+            </button>
+          </div>
+        </div>
         <div class="intro-actions">
           <button type="button" @click="scrollToTest">Empezar test</button>
           <button type="button" class="secondary" @click="toggleHistory">
@@ -284,31 +307,6 @@ function toggleHistory() {
     </section>
 
     <section class="card">
-      <section class="intro">
-
-        <div class="intro-grid">
-          <article class="intro-block accent-a">
-            <h2>Modo estudio</h2>
-            <p>Una pregunta cada vez, avance con anterior/siguiente y botones numerados para volver donde quieras.</p>
-          </article>
-
-          <article class="intro-block accent-b">
-            <h2>Simulacros cortos</h2>
-            <p>Los simulacros largos se dividen de 20 en 20 para que practicar no se haga eterno.</p>
-          </article>
-
-          <article class="intro-block accent-c">
-            <h2>Repaso rápido</h2>
-            <p>Marca preguntas dudosas y al corregir verás cuáles conviene volver a mirar.</p>
-          </article>
-
-          <article class="intro-block accent-d">
-            <h2>Datos locales</h2>
-            <p>El historial se queda en tu navegador. Puedes borrarlo por completo o por asignatura.</p>
-          </article>
-        </div>
-      </section>
-
       <section id="test-section">
       <div class="mobile-selectors">
         <label>
@@ -324,40 +322,19 @@ function toggleHistory() {
           </select>
         </label>
       </div>
-      <div class="module-switcher">
-        <button
-          v-for="module in modules"
-          :key="module.id"
-          type="button"
-          class="module-button"
-          :class="module.id === activeModuleId ? 'active' : ''"
-          @click="switchModule(module.id)"
-        >
-          {{ module.title }}
-        </button>
-      </div>
-      <div v-if="activeModule.questionSets?.length > 1" class="question-set-switcher" aria-label="Tipo de test">
-        <button
-          v-for="set in activeModule.questionSets"
-          :key="set.id"
-          type="button"
-          class="question-set-button"
-          :class="set.id === activeQuestionSetId ? 'active' : ''"
-          @click="switchQuestionSet(set.id)"
-        >
-          {{ set.title }}
-        </button>
-      </div>
       <h2>Zona de preguntas</h2>
       <p class="muted"><strong>Modulo:</strong> {{ activeModule.title }}</p>
       <p class="muted"><strong>Modo:</strong> {{ activeQuestionSet.title }}</p>
       <p class="muted">Responde las {{ total }} preguntas, una cada vez. Las opciones aparecen en orden aleatorio.</p>
 
       <div v-if="!finished" class="quiz-status">
-        <div>
+        <div class="quiz-status-top">
           <span class="progress">Pregunta {{ currentQuestionNumber }} / {{ total }}</span>
           <span class="answered-pill">Contestadas: {{ answeredCount }} / {{ total }}</span>
           <span class="answered-pill">Repasar: {{ flaggedCount }}</span>
+        </div>
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" :style="{ width: (answeredCount / total * 100) + '%' }"></div>
         </div>
         <div class="question-jump" aria-label="Ir a pregunta">
           <button
@@ -378,19 +355,21 @@ function toggleHistory() {
       </div>
 
       <form v-if="!finished" @submit.prevent="submit">
-        <article v-if="currentQuestion" class="question current-question">
-          <div class="question-meta">
-            <p class="question-kicker">Pregunta {{ currentQuestionNumber }} de {{ total }}</p>
-            <button type="button" class="flag-button" @click="toggleFlag(currentQuestion.id)">
-              {{ flaggedQuestions[currentQuestion.id] ? 'Quitar repaso' : 'Marcar repaso' }}
-            </button>
-          </div>
-          <h2>{{ currentQuestion.text }}</h2>
-          <label v-for="option in currentQuestion.options" :key="option.key" class="option">
-            <input v-model="answers[currentQuestion.id]" type="radio" :name="currentQuestion.id" :value="option.key" />
-            <span><strong>{{ option.key }}.</strong> {{ option.value }}</span>
-          </label>
-        </article>
+        <transition name="fade-slide" mode="out-in">
+          <article v-if="currentQuestion" :key="currentQuestion.id" class="question current-question">
+            <div class="question-meta">
+              <p class="question-kicker">Pregunta {{ currentQuestionNumber }} de {{ total }}</p>
+              <button type="button" class="flag-button" @click="toggleFlag(currentQuestion.id)">
+                {{ flaggedQuestions[currentQuestion.id] ? 'Quitar repaso' : 'Marcar repaso' }}
+              </button>
+            </div>
+            <h2>{{ currentQuestion.text }}</h2>
+            <label v-for="option in currentQuestion.options" :key="option.key" class="option">
+              <input v-model="answers[currentQuestion.id]" type="radio" :name="currentQuestion.id" :value="option.key" />
+              <span><strong>{{ option.key }}.</strong> {{ option.value }}</span>
+            </label>
+          </article>
+        </transition>
         <div class="quiz-actions">
           <button type="button" class="secondary" :disabled="isFirstQuestion" @click="previousQuestion">Anterior</button>
           <button type="button" :disabled="isLastQuestion" @click="nextQuestion">Siguiente</button>
@@ -399,10 +378,26 @@ function toggleHistory() {
       </form>
 
       <section v-else>
-        <h2>Resultado final</h2>
-        <p class="score">Aciertos: {{ result.aciertos }}</p>
-        <p class="score">Respondidas: {{ result.respondidas }} / {{ total }}</p>
-        <p class="score">Nota sobre respondidas: {{ result.porcentaje }}%</p>
+        <div class="result-card">
+          <div class="result-score" :class="result.porcentaje >= 50 ? 'pass' : 'fail'">
+            <span class="result-percent">{{ result.porcentaje }}%</span>
+            <span class="result-label">Nota final</span>
+          </div>
+          <div class="result-stats">
+            <div class="result-stat">
+              <span class="stat-value">{{ result.aciertos }}</span>
+              <span class="stat-label">Aciertos</span>
+            </div>
+            <div class="result-stat">
+              <span class="stat-value">{{ result.respondidas }}</span>
+              <span class="stat-label">Respondidas</span>
+            </div>
+            <div class="result-stat">
+              <span class="stat-value">{{ total }}</span>
+              <span class="stat-label">Total preguntas</span>
+            </div>
+          </div>
+        </div>
         <button type="button" @click="resetQuiz">Repetir test</button>
 
         <h3>Detalle por pregunta</h3>
