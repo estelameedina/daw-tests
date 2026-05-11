@@ -1,145 +1,104 @@
 # TEST DAW
 
-App web para practicar examenes tipo test de DAW. Preguntas por modulo, simulacros por bloques, orden aleatorio e historial local.
+Aplicación web para ensayar exámenes tipo test del ciclo DAW. Cada módulo funciona por separado, las preguntas aparecen en orden distinto cada vez, y se guarda un historial local de resultados.
 
-## Objetivo del proyecto
+## Para qué sirve
 
-- Practicar examenes tipo test por modulo sin mezclar preguntas entre modulos.
-- Ver resultado inmediato con detalle por pregunta.
-- Guardar historico local de intentos y analizar progreso por modulo.
+- Elegir un módulo desde la pantalla principal y practicar solo sus preguntas.
+- Ver la nota al instante en formato visual.
+- Llevar un registro de los intentos anteriores y revisar el progreso.
 
-## Caracteristicas principales
+## Cómo funciona
 
-- Modulos separados con banco de preguntas independiente.
-- Banco general y, opcionalmente, simulacros de examen por modulo.
-- 3 opciones por pregunta.
-- Orden aleatorio de opciones en cada intento.
-- Correccion aunque no respondas todo el test.
-- Nota calculada sobre preguntas respondidas.
-- Revision por pregunta:
-  - respuesta correcta (siempre visible)
-  - respuesta incorrecta elegida (si aplica)
-  - preguntas sin responder
-- Test pregunta a pregunta con navegacion anterior/siguiente.
-- Marcado de preguntas para repasar.
-- Historial local en `localStorage` (clave: `quiz_scores_v1`).
-- Filtro de historial por modulo.
-- Resumen de historial filtrado:
-  - intentos
-  - media
-  - mejor nota
-- Borrado de historial:
-  - global
-  - por modulo filtrado
-  - por intento individual
-- Entrada principal fija en la app con descripcion y guia de uso.
+- La pantalla de inicio muestra una cuadrícula con los módulos disponibles. Cada uno tiene un icono y su nombre.
+- Al pulsar uno, se accede al test de ese módulo.
+- Dentro del test: se responde pregunta a pregunta, se puede saltar entre ellas, y al final se corrigen.
+- Los resultados se guardan solos en el navegador.
 
-## Modulos disponibles
+## Lo que incluye
 
-- Despliegue de aplicaciones web
-- Desarrollo web en entorno servidor
-- Desarrollo web entorno cliente
-- Digitalizacion aplicada a los sectores productivos
-- Diseno de interfaces web
-- Empleabilidad II
-- Modulo optativo de Python
-- Sostenibilidad aplicada a los sectores productivos
-- Ingles profesional
+- Dos pasos para llegar al test: inicio con tarjetas -> test del módulo.
+- Cada módulo tiene su propio banco de preguntas.
+- Algunos módulos incluyen simulacros de examen (banco general + simulacro).
+- Las preguntas y sus opciones se muestran en orden aleatorio.
+- Barra de progreso que se llena a medida que respondes.
+- Animación al cambiar de pregunta.
+- Tarjeta de resultado con porcentaje y desglose.
+- El test se corrige aunque falten preguntas por responder.
+- La nota se calcula sobre lo respondido.
+- Revisión pregunta por pregunta: ver cuáles acertaste y cuáles no.
+- Opción de marcar preguntas para revisar después.
+- Historial guardado en el navegador (`localStorage`), con filtro por módulo.
+- Posibilidad de borrar el historial entero, por módulo, o un intento concreto.
 
-## Estructura del proyecto
+## Módulos
 
-- `src/App.vue`: logica principal del test, correccion, historial y portada.
-- `src/style.css`: estilos de interfaz.
-- `src/modules.js`: registro de modulos.
-- `src/mockExamQuestions.js`: preguntas de simulacro de examen por modulo.
-- `src/questions.js`: preguntas modulo Despliegue.
-- `src/questionsServidor.js`: preguntas modulo Entorno servidor.
-- `src/questionsCliente.js`: preguntas modulo Entorno cliente.
-- `src/questionsDigitalizacion.js`: preguntas modulo Digitalizacion.
-- `src/questionsDisenoInterfaces.js`: preguntas modulo Diseno de interfaces.
-- `src/questionsEmpleabilidad2.js`: preguntas modulo Empleabilidad II.
-- `src/questionsPythonOptativo.js`: preguntas modulo Python optativo.
-- `src/questionsSostenibilidad.js`: preguntas modulo Sostenibilidad.
-- `src/questionsInglesProfesional.js`: preguntas modulo Ingles profesional.
+| Icono | Módulo |
+|-------|--------|
+| 🚀 | Despliegue de aplicaciones web |
+| ⚙️ | Desarrollo web en entorno servidor |
+| 🎨 | Desarrollo web entorno cliente |
+| 💡 | Digitalización aplicada a los sectores productivos |
+| 🖌️ | Diseño de interfaces web |
+| 💼 | Empleabilidad II |
+| 🐍 | Módulo optativo de Python |
+| 🌱 | Sostenibilidad aplicada a los sectores productivos |
+| 🌐 | Inglés profesional |
+
+## Archivos del proyecto
+
+- `src/App.vue` — lógica general: inicio, test, corrección, historial.
+- `src/style.css` — colores y estilos (azul marino + salmón).
+- `src/modules.js` — registro de módulos, iconos y configuración.
+- `src/mockExamQuestions*.js` — preguntas de simulacro separadas por módulo.
+- `src/questions*.js` — bancos de preguntas generales de cada módulo.
 
 ## Requisitos
 
 - Node.js 18 o superior
 - npm
 
-## Arranque en local (desarrollo)
-
-1. Instala dependencias:
+## Poner en marcha
 
 ```bash
 npm install
-```
-
-2. Inicia servidor de desarrollo:
-
-```bash
 npm run dev
 ```
 
-3. Abre la URL mostrada en consola (normalmente `http://localhost:5173`).
+Abrir `http://localhost:5173`.
 
-## Build de produccion
+## Compilar para producción
 
 ```bash
 npm run build
 ```
 
-El resultado se genera en `dist/`.
+Los archivos finales se quedan en `dist/`.
 
-## Previsualizar build local
-
-```bash
-npm run preview
-```
-
-## Uso con Docker
-
-1. Construye la imagen:
+## Docker
 
 ```bash
-docker build -t test-modulos-web .
+docker build -t daw-tests .
+docker run --rm -p 8080:80 daw-tests
 ```
 
-2. Ejecuta el contenedor:
-
-```bash
-docker run --rm -p 8080:80 test-modulos-web
-```
-
-3. Abre en navegador:
-
-- `http://localhost:8080`
-
-## Uso con Docker Compose
+O con Compose:
 
 ```bash
 docker compose up --build
 ```
 
-La app quedara disponible en `http://localhost:8080`.
+## Cómo se usa
 
-## Uso funcional de la app
+1. En la pantalla principal, haz clic en la tarjeta del módulo que quieras practicar.
+2. Si hay simulacro disponible, escoge entre **Banco general** o **Simulacro de examen**.
+3. Contesta las preguntas de una en una. Los botones numerados permiten saltar entre ellas.
+4. Pulsa **Corregir test** para obtener la nota y el detalle.
+5. Con **Ver historial** accedes a los intentos anteriores.
 
-1. Selecciona un modulo en la parte superior.
-2. Si el modulo tiene simulacro de examen, elige entre **Banco general** o **Simulacro de examen**.
-3. Responde preguntas (no necesitas completar todas).
-4. Pulsa **Corregir test** para ver:
-   - aciertos
-   - respondidas
-   - porcentaje sobre respondidas
-   - detalle por pregunta
-5. Consulta el historial local y filtra por modulo para comparar intentos.
+## Añadir simulacros
 
-## Anadir simulacros de examen
-
-Las preguntas de simulacro se anaden en `src/mockExamQuestions.js`, dentro del array del modulo correspondiente.
-
-Ejemplo:
+Las preguntas de simulacro se definen en `src/mockExamQuestions.js` (o en un archivo aparte por módulo). Ejemplo:
 
 ```js
 export const mockExamQuestionsByModule = {
@@ -147,74 +106,34 @@ export const mockExamQuestionsByModule = {
     {
       id: "sim-despliegue-1",
       text: "Texto de la pregunta",
-      options: ["Opcion A", "Opcion B", "Opcion C"],
-      correct: "Opcion B"
+      options: ["Opción A", "Opción B", "Opción C"],
+      correct: "Opción B"
     }
-  ],
-  servidor: [],
-  cliente: []
+  ]
 };
 ```
 
-Cuando un modulo tenga al menos una pregunta en su array, la app mostrara automaticamente el selector **Simulacro de examen** para ese modulo.
-Si el simulacro tiene mas de 20 preguntas, se divide automaticamente en bloques:
-
+Si un simulacro supera las 20 preguntas, se parte solo en bloques:
 - `Simulacro 1 (1-20)`
 - `Simulacro 2 (21-40)`
-- y asi sucesivamente.
 
-## Persistencia de datos
+## Dónde se guardan los datos
 
-- El historial se guarda solo en el navegador del usuario con la clave:
-  - `quiz_scores_v1`
-- Si borras datos del navegador o pulsas los botones de borrado de historial, los intentos se eliminan.
+- El historial se almacena en `localStorage` con la clave `quiz_scores_v1`.
+- Los datos se quedan en el navegador hasta que se borren a mano.
 
-## Comandos utiles
+## Comandos
 
-- `npm run dev`: modo desarrollo
-- `npm run dev:mobile`: modo desarrollo accesible desde movil en la misma red Wi-Fi
-- `npm run build`: build de produccion
-- `npm run preview`: previsualiza el build
-- `docker build -t test-modulos-web .`: construye imagen Docker
-- `docker run --rm -p 8080:80 test-modulos-web`: ejecuta contenedor
-- `docker compose up --build`: levanta con Compose
-
-## Usar desde el movil
-
-1. Conecta el ordenador y el movil a la misma red Wi-Fi.
-2. Arranca la app con:
-
-```bash
-npm run dev:mobile
-```
-
-3. En la salida de Vite, usa la URL de red local, normalmente parecida a:
-
-```text
-http://192.168.x.x:5173
-```
-
-4. Abre esa URL en el navegador del movil.
-
-## Publicacion en GitHub (repo publico)
-
-Repositorio objetivo: `test-modulos-web`
-
-```bash
-git init
-git add .
-git commit -m "chore: add docker setup and deployment docs"
-git branch -M main
-gh repo create test-modulos-web --public --source=. --remote=origin --push
-```
-
-Si no tienes sesion iniciada en GitHub CLI:
-
-```bash
-gh auth login
-```
+| Comando | Descripción |
+|---------|------------|
+| `npm run dev` | Desarrollo |
+| `npm run dev:mobile` | Acceso desde el móvil en la misma red |
+| `npm run build` | Build de producción |
+| `npm run preview` | Previsualizar build |
+| `docker build -t daw-tests .` | Construir imagen Docker |
+| `docker run --rm -p 8080:80 daw-tests` | Ejecutar contenedor |
 
 ## Notas
 
-- No hay backend ni base de datos remota.
-- Proyecto orientado a practica local y uso educativo.
+- No hay backend ni base de datos externa.
+- Proyecto pensado para uso local y educativo.

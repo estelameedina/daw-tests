@@ -72,14 +72,14 @@ export const modules = [
   },
   {
     id: "digitalizacion",
-    title: "Digitalizacion aplicada a los sectores productivos",
+    title: "Digitalización aplicada a los sectores productivos",
     icon: "💡",
     questions: questionsDigitalizacion,
     questionSets: buildQuestionSets("digitalizacion", questionsDigitalizacion)
   },
   {
     id: "diseno-interfaces",
-    title: "Diseno de interfaces web",
+    title: "Diseño de interfaces web",
     icon: "🖌️",
     questions: questionsDisenoInterfaces,
     questionSets: buildQuestionSets("diseno-interfaces", questionsDisenoInterfaces)
@@ -93,7 +93,7 @@ export const modules = [
   },
   {
     id: "python-optativo",
-    title: "Modulo optativo de Python",
+    title: "Módulo optativo de Python",
     icon: "🐍",
     questions: questionsPythonOptativo,
     questionSets: buildQuestionSets("python-optativo", questionsPythonOptativo)
@@ -107,7 +107,7 @@ export const modules = [
   },
   {
     id: "ingles-profesional",
-    title: "Ingles profesional",
+    title: "Inglés profesional",
     icon: "🌐",
     questions: questionsInglesProfesional,
     questionSets: buildQuestionSets("ingles-profesional", questionsInglesProfesional)

@@ -297,62 +297,32 @@ function toggleHistory() {
 
     <template v-else>
       <section class="study-hero">
-        <div>
-          <button type="button" class="back-button" @click="goHome">&larr; Volver</button>
-          <div class="hero-modules">
-            <div class="module-switcher">
-              <button
-                v-for="module in modules"
-                :key="module.id"
-                type="button"
-                class="module-button"
-                :class="module.id === activeModuleId ? 'active' : ''"
-                @click="switchModule(module.id)"
-              >
-                {{ module.title }}
-              </button>
-            </div>
-            <div v-if="activeModule.questionSets?.length > 1" class="question-set-switcher" aria-label="Tipo de test">
-              <button
-                v-for="set in activeModule.questionSets"
-                :key="set.id"
-                type="button"
-                class="question-set-button"
-                :class="set.id === activeQuestionSetId ? 'active' : ''"
-                @click="switchQuestionSet(set.id)"
-              >
-                {{ set.title }}
-              </button>
-            </div>
-          </div>
-          <div class="intro-actions">
-            <button type="button" class="secondary" @click="toggleHistory">
-              {{ showHistory ? 'Cerrar historial' : 'Ver historial' }}
-            </button>
-          </div>
+        <button type="button" class="back-button" @click="goHome">&larr; Volver</button>
+        <div v-if="activeModule.questionSets?.length > 1" class="question-set-switcher" aria-label="Tipo de test">
+          <button
+            v-for="set in activeModule.questionSets"
+            :key="set.id"
+            type="button"
+            class="question-set-button"
+            :class="set.id === activeQuestionSetId ? 'active' : ''"
+            @click="switchQuestionSet(set.id)"
+          >
+            {{ set.title }}
+          </button>
         </div>
-
-        <div class="hero-panel">
-          <span class="panel-label">Ahora mismo</span>
+        <div class="hero-info">
+          <span class="hero-icon">{{ activeModule.icon }}</span>
           <strong>{{ activeModule.title }}</strong>
-          <span>{{ activeQuestionSet.title }}</span>
-          <div class="hero-stats">
-            <span>{{ totalAttempts }} intentos</span>
-            <span v-if="globalBestAttempt">{{ globalBestAttempt.porcentaje }}% mejor nota</span>
-            <span v-else>Sin notas todavía</span>
-          </div>
+          <span class="muted">{{ activeQuestionSet.title }}</span>
+          <span class="hero-stats">{{ totalAttempts }} intentos &middot; {{ globalBestAttempt ? globalBestAttempt.porcentaje + '% mejor nota' : 'Sin notas' }}</span>
+          <button type="button" class="secondary hero-history-btn" @click="toggleHistory">
+            {{ showHistory ? 'Cerrar historial' : 'Historial' }}
+          </button>
         </div>
       </section>
 
-      <section class="card">
-      <section id="test-section">
+      <section id="test-section" class="card">
       <div class="mobile-selectors">
-        <label>
-          Modulo
-          <select :value="activeModuleId" @change="handleModuleSelect">
-            <option v-for="module in modules" :key="module.id" :value="module.id">{{ module.title }}</option>
-          </select>
-        </label>
         <label v-if="activeModule.questionSets?.length > 1">
           Bloque
           <select :value="activeQuestionSetId" @change="handleQuestionSetSelect">
@@ -360,14 +330,10 @@ function toggleHistory() {
           </select>
         </label>
       </div>
-      <h2>Zona de preguntas</h2>
-      <p class="muted"><strong>Modulo:</strong> {{ activeModule.title }}</p>
-      <p class="muted"><strong>Modo:</strong> {{ activeQuestionSet.title }}</p>
-      <p class="muted">Responde las {{ total }} preguntas, una cada vez. Las opciones aparecen en orden aleatorio.</p>
+      <p class="muted">Responde las {{ total }} preguntas. Las opciones aparecen en orden aleatorio.</p>
 
       <div v-if="!finished" class="quiz-status">
         <div class="quiz-status-top">
-          <span class="progress">Pregunta {{ currentQuestionNumber }} / {{ total }}</span>
           <span class="answered-pill">Contestadas: {{ answeredCount }} / {{ total }}</span>
           <span class="answered-pill">Repasar: {{ flaggedCount }}</span>
         </div>
@@ -436,7 +402,7 @@ function toggleHistory() {
             </div>
           </div>
         </div>
-        <button type="button" @click="resetQuiz">Repetir test</button>
+        <button type="button" class="retry-button" @click="resetQuiz">Repetir test</button>
 
         <h3>Detalle por pregunta</h3>
         <article
@@ -462,7 +428,6 @@ function toggleHistory() {
           <p v-else class="correct-state"><strong>Correcta.</strong></p>
           <p v-if="item.marcadaParaRepasar" class="flagged-note"><strong>Marcada para repasar.</strong></p>
         </article>
-      </section>
       </section>
     </section>
     </template>
