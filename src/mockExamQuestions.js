@@ -995,7 +995,6 @@ export const mockExamQuestionsByModule = {
       correct: "Validar la idea de negocio, promocionar y facilitar la comercialización."
     }
   ],
-  "python-optativo": [],
   sostenibilidad: [
     {
       id: "sim-sostenibilidad-1",
