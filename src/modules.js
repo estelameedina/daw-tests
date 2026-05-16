@@ -9,11 +9,26 @@ import { questionsSostenibilidad } from "./questionsSostenibilidad";
 import { questionsInglesProfesional } from "./questionsInglesProfesional";
 import { mockExamQuestionsByModule } from "./mockExamQuestions";
 
-const MOCK_EXAM_CHUNK_SIZE = 20;
+const CHUNK_SIZE = 20;
+
+function buildChunkedSets(questions) {
+  if (questions.length <= CHUNK_SIZE) return [];
+  const sets = [];
+  for (let start = 0; start < questions.length; start += CHUNK_SIZE) {
+    const chunk = questions.slice(start, start + CHUNK_SIZE);
+    const end = start + chunk.length;
+    sets.push({
+      id: `parte-${sets.length + 1}`,
+      title: `Parte ${sets.length + 1} (${start + 1}-${end})`,
+      questions: chunk
+    });
+  }
+  return sets;
+}
 
 function buildMockExamSets(mockQuestions) {
   if (!mockQuestions.length) return [];
-  if (mockQuestions.length <= MOCK_EXAM_CHUNK_SIZE) {
+  if (mockQuestions.length <= CHUNK_SIZE) {
     return [
       {
         id: "simulacro",
@@ -24,8 +39,8 @@ function buildMockExamSets(mockQuestions) {
   }
 
   const sets = [];
-  for (let start = 0; start < mockQuestions.length; start += MOCK_EXAM_CHUNK_SIZE) {
-    const chunk = mockQuestions.slice(start, start + MOCK_EXAM_CHUNK_SIZE);
+  for (let start = 0; start < mockQuestions.length; start += CHUNK_SIZE) {
+    const chunk = mockQuestions.slice(start, start + CHUNK_SIZE);
     const end = start + chunk.length;
     sets.push({
       id: `simulacro-${sets.length + 1}`,
@@ -44,6 +59,7 @@ function buildQuestionSets(moduleId, baseQuestions) {
       title: "Banco general",
       questions: baseQuestions
     },
+    ...buildChunkedSets(baseQuestions),
     ...buildMockExamSets(mockQuestions)
   ];
 }
