@@ -92,7 +92,10 @@ const answeredCount = computed(() => Object.keys(answers.value).length);
 const total = computed(() => exam.value.length);
 const canSubmit = computed(() => answeredCount.value > 0);
 const flaggedCount = computed(() => Object.values(flaggedQuestions.value).filter(Boolean).length);
-const flaggedInModule = computed(() => activeModule.value.questions.filter((q) => flaggedQuestions.value[q.id]).length);
+const flaggedInModule = computed(() => {
+  const allQs = (activeModule.value.questionSets || []).flatMap((s) => s.questions);
+  return allQs.filter((q) => flaggedQuestions.value[q.id]).length;
+});
 const isRepaso = computed(() => repasoMode.value || activeQuestionSetId.value === "__repaso__");
 const currentQuestion = computed(() => exam.value[currentQuestionIndex.value] || null);
 const currentQuestionNumber = computed(() => currentQuestionIndex.value + 1);
@@ -189,7 +192,8 @@ function submit() {
 
 function resetQuiz() {
   if (repasoMode.value) {
-    const flagged = activeModule.value.questions.filter((q) => flaggedQuestions.value[q.id]);
+    const allQs = (activeModule.value.questionSets || []).flatMap((s) => s.questions);
+    const flagged = allQs.filter((q) => flaggedQuestions.value[q.id]);
     exam.value = buildExam(flagged);
   } else {
     exam.value = buildExam(activeQuestionSet.value.questions);
@@ -201,7 +205,8 @@ function resetQuiz() {
 }
 
 function startRepaso() {
-  const flagged = activeModule.value.questions.filter((q) => flaggedQuestions.value[q.id]);
+  const allQs = (activeModule.value.questionSets || []).flatMap((s) => s.questions);
+  const flagged = allQs.filter((q) => flaggedQuestions.value[q.id]);
   if (!flagged.length) return;
   repasoMode.value = true;
   currentView.value = "test";
