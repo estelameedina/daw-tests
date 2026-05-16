@@ -75,10 +75,12 @@ function selectModule(moduleId) {
 function goHome() {
   currentView.value = "home";
   repasoMode.value = false;
+  fallosMode.value = false;
 }
 
 const exam = ref(buildExam(activeQuestionSet.value.questions));
 const repasoMode = ref(false);
+const fallosMode = ref(false);
 const currentQuestionIndex = ref(0);
 const answers = ref({});
 const flaggedQuestions = ref(readFlagged());
@@ -97,6 +99,18 @@ const flaggedInModule = computed(() => {
   return allQs.filter((q) => flaggedQuestions.value[q.id]).length;
 });
 const isRepaso = computed(() => repasoMode.value || activeQuestionSetId.value === "__repaso__");
+const isFallos = computed(() => fallosMode.value);
+const failedIds = computed(() => {
+  const moduleHistory = history.value.filter((h) => h.moduleId === activeModule.value.id);
+  const ids = new Set();
+  moduleHistory.forEach((h) => {
+    (h.respuestas || []).forEach((r) => {
+      if (r.respuestaUsuario && !r.esCorrecta) ids.add(r.preguntaId);
+    });
+  });
+  return ids;
+});
+const failedCountInSet = computed(() => activeQuestionSet.value.questions.filter((q) => failedIds.value.has(q.id)).length);
 const currentQuestion = computed(() => exam.value[currentQuestionIndex.value] || null);
 const currentQuestionNumber = computed(() => currentQuestionIndex.value + 1);
 const isFirstQuestion = computed(() => currentQuestionIndex.value === 0);
@@ -195,6 +209,9 @@ function resetQuiz() {
     const allQs = (activeModule.value.questionSets || []).flatMap((s) => s.questions);
     const flagged = allQs.filter((q) => flaggedQuestions.value[q.id]);
     exam.value = buildExam(flagged);
+  } else if (fallosMode.value) {
+    const failed = activeQuestionSet.value.questions.filter((q) => failedIds.value.has(q.id));
+    exam.value = buildExam(failed);
   } else {
     exam.value = buildExam(activeQuestionSet.value.questions);
   }
@@ -209,8 +226,23 @@ function startRepaso() {
   const flagged = allQs.filter((q) => flaggedQuestions.value[q.id]);
   if (!flagged.length) return;
   repasoMode.value = true;
+  fallosMode.value = false;
   currentView.value = "test";
   exam.value = buildExam(flagged);
+  currentQuestionIndex.value = 0;
+  answers.value = {};
+  startTime.value = Date.now();
+  finished.value = false;
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function startFallos() {
+  const failed = activeQuestionSet.value.questions.filter((q) => failedIds.value.has(q.id));
+  if (!failed.length) return;
+  fallosMode.value = true;
+  repasoMode.value = false;
+  currentView.value = "test";
+  exam.value = buildExam(failed);
   currentQuestionIndex.value = 0;
   answers.value = {};
   startTime.value = Date.now();
@@ -249,6 +281,7 @@ function switchModule(moduleId) {
   activeModuleId.value = moduleId;
   activeQuestionSetId.value = activeModule.value.questionSets?.[0]?.id || "general";
   repasoMode.value = false;
+  fallosMode.value = false;
   resetQuiz();
 }
 
@@ -256,6 +289,7 @@ function switchQuestionSet(questionSetId) {
   if (questionSetId === activeQuestionSetId.value) return;
   activeQuestionSetId.value = questionSetId;
   repasoMode.value = false;
+  fallosMode.value = false;
   resetQuiz();
 }
 
@@ -353,9 +387,10 @@ function toggleHistory() {
         <div class="hero-info">
           <span class="hero-icon">{{ activeModule.icon }}</span>
           <strong>{{ activeModule.title }}</strong>
-          <span class="muted">{{ isRepaso ? 'Repaso' : activeQuestionSet.title }}</span>
+          <span class="muted">{{ isRepaso ? 'Repaso' : isFallos ? 'Solo fallos' : activeQuestionSet.title }}</span>
           <span class="hero-stats">{{ totalAttempts }} intentos &middot; {{ globalBestAttempt ? globalBestAttempt.porcentaje + '% mejor nota' : 'Sin notas' }}</span>
-          <button v-if="flaggedInModule && !isRepaso" type="button" class="repaso-btn" @click="startRepaso">Repaso ({{ flaggedInModule }})</button>
+          <button v-if="flaggedInModule && !isRepaso && !isFallos" type="button" class="repaso-btn" @click="startRepaso">Repaso ({{ flaggedInModule }})</button>
+          <button v-if="failedCountInSet && !isFallos && !isRepaso" type="button" class="fallos-btn" @click="startFallos">Solo fallos ({{ failedCountInSet }})</button>
           <button type="button" class="secondary hero-history-btn" @click="toggleHistory">
             {{ showHistory ? 'Cerrar historial' : 'Historial' }}
           </button>
