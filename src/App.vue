@@ -3,6 +3,18 @@ import { computed, ref } from "vue";
 import { modules } from "./modules";
 
 const STORAGE_KEY = "quiz_scores_v1";
+const FLAG_KEY = "quiz_flagged_v1";
+
+function readFlagged() {
+  try {
+    const raw = localStorage.getItem(FLAG_KEY);
+    if (!raw) return {};
+    const parsed = JSON.parse(raw);
+    return typeof parsed === "object" && !Array.isArray(parsed) ? parsed : {};
+  } catch {
+    return {};
+  }
+}
 
 function shuffle(arr) {
   const copy = [...arr];
@@ -62,12 +74,15 @@ function selectModule(moduleId) {
 
 function goHome() {
   currentView.value = "home";
+  repasoMode.value = false;
 }
 
 const exam = ref(buildExam(activeQuestionSet.value.questions));
+const repasoMode = ref(false);
 const currentQuestionIndex = ref(0);
 const answers = ref({});
-  const startTime = ref(Date.now());
+const flaggedQuestions = ref(readFlagged());
+const startTime = ref(Date.now());
 const finished = ref(false);
 const history = ref(readHistory());
 const showHistory = ref(false);
@@ -76,6 +91,9 @@ const historyModuleFilter = ref("all");
 const answeredCount = computed(() => Object.keys(answers.value).length);
 const total = computed(() => exam.value.length);
 const canSubmit = computed(() => answeredCount.value > 0);
+const flaggedCount = computed(() => Object.values(flaggedQuestions.value).filter(Boolean).length);
+const flaggedInModule = computed(() => activeModule.value.questions.filter((q) => flaggedQuestions.value[q.id]).length);
+const isRepaso = computed(() => repasoMode.value || activeQuestionSetId.value === "__repaso__");
 const currentQuestion = computed(() => exam.value[currentQuestionIndex.value] || null);
 const currentQuestionNumber = computed(() => currentQuestionIndex.value + 1);
 const isFirstQuestion = computed(() => currentQuestionIndex.value === 0);
@@ -131,7 +149,8 @@ const result = computed(() => {
       textoRespuestaUsuario: chosen ? optionMap[chosen] : null,
       respuestaCorrecta: q.correct,
       textoRespuestaCorrecta: q.correct ? optionMap[q.correct] : null,
-      esCorrecta: isCorrect
+      esCorrecta: isCorrect,
+      marcadaParaRepasar: Boolean(flaggedQuestions.value[q.id])
     };
   });
 
@@ -155,6 +174,7 @@ function saveAttempt() {
     total: total.value,
     porcentaje: result.value.porcentaje,
     duracionSeg: duration,
+    marcadasParaRepasar: result.value.details.filter((item) => item.marcadaParaRepasar).map((item) => item.preguntaId),
     respuestas: result.value.details
   };
   history.value = [attempt, ...history.value].slice(0, 50);
@@ -168,11 +188,29 @@ function submit() {
 }
 
 function resetQuiz() {
-  exam.value = buildExam(activeQuestionSet.value.questions);
+  if (repasoMode.value) {
+    const flagged = activeModule.value.questions.filter((q) => flaggedQuestions.value[q.id]);
+    exam.value = buildExam(flagged);
+  } else {
+    exam.value = buildExam(activeQuestionSet.value.questions);
+  }
   currentQuestionIndex.value = 0;
   answers.value = {};
   startTime.value = Date.now();
   finished.value = false;
+}
+
+function startRepaso() {
+  const flagged = activeModule.value.questions.filter((q) => flaggedQuestions.value[q.id]);
+  if (!flagged.length) return;
+  repasoMode.value = true;
+  currentView.value = "test";
+  exam.value = buildExam(flagged);
+  currentQuestionIndex.value = 0;
+  answers.value = {};
+  startTime.value = Date.now();
+  finished.value = false;
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function previousQuestion() {
@@ -193,16 +231,26 @@ function goToQuestion(index) {
   }
 }
 
+function toggleFlag(questionId) {
+  flaggedQuestions.value = {
+    ...flaggedQuestions.value,
+    [questionId]: !flaggedQuestions.value[questionId]
+  };
+  localStorage.setItem(FLAG_KEY, JSON.stringify(flaggedQuestions.value));
+}
+
 function switchModule(moduleId) {
   if (moduleId === activeModuleId.value) return;
   activeModuleId.value = moduleId;
   activeQuestionSetId.value = activeModule.value.questionSets?.[0]?.id || "general";
+  repasoMode.value = false;
   resetQuiz();
 }
 
 function switchQuestionSet(questionSetId) {
   if (questionSetId === activeQuestionSetId.value) return;
   activeQuestionSetId.value = questionSetId;
+  repasoMode.value = false;
   resetQuiz();
 }
 
@@ -300,8 +348,9 @@ function toggleHistory() {
         <div class="hero-info">
           <span class="hero-icon">{{ activeModule.icon }}</span>
           <strong>{{ activeModule.title }}</strong>
-          <span class="muted">{{ activeQuestionSet.title }}</span>
+          <span class="muted">{{ isRepaso ? 'Repaso' : activeQuestionSet.title }}</span>
           <span class="hero-stats">{{ totalAttempts }} intentos &middot; {{ globalBestAttempt ? globalBestAttempt.porcentaje + '% mejor nota' : 'Sin notas' }}</span>
+          <button v-if="flaggedInModule && !isRepaso" type="button" class="repaso-btn" @click="startRepaso">Repaso ({{ flaggedInModule }})</button>
           <button type="button" class="secondary hero-history-btn" @click="toggleHistory">
             {{ showHistory ? 'Cerrar historial' : 'Historial' }}
           </button>
@@ -322,6 +371,7 @@ function toggleHistory() {
       <div v-if="!finished" class="quiz-status">
         <div class="quiz-status-top">
           <span class="answered-pill">Contestadas: {{ answeredCount }} / {{ total }}</span>
+          <span class="answered-pill">Repasar: {{ flaggedCount }}</span>
         </div>
         <div class="progress-bar-track">
           <div class="progress-bar-fill" :style="{ width: (answeredCount / total * 100) + '%' }"></div>
@@ -334,7 +384,8 @@ function toggleHistory() {
             class="question-jump-button"
             :class="{
               active: index === currentQuestionIndex,
-              answered: answers[q.id]
+              answered: answers[q.id],
+              flagged: flaggedQuestions[q.id]
             }"
             @click="goToQuestion(index)"
           >
@@ -347,7 +398,12 @@ function toggleHistory() {
         <transition name="fade-slide" mode="out-in">
           <article v-if="currentQuestion" :key="currentQuestion.id" class="question current-question">
             <p class="question-kicker">Pregunta {{ currentQuestionNumber }} de {{ total }}</p>
-            <h2>{{ currentQuestion.text }}</h2>
+            <div class="question-head">
+              <h2>{{ currentQuestion.text }}</h2>
+              <button type="button" class="flag-button" :class="{ flagged: flaggedQuestions[currentQuestion.id] }" @click="toggleFlag(currentQuestion.id)" :title="flaggedQuestions[currentQuestion.id] ? 'Quitar de repaso' : 'Marcar para repasar'">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+              </button>
+            </div>
             <label v-for="option in currentQuestion.options" :key="option.key" class="option">
               <input v-model="answers[currentQuestion.id]" type="radio" :name="currentQuestion.id" :value="option.key" />
               <span><strong>{{ option.key }}.</strong> {{ option.value }}</span>
@@ -392,6 +448,9 @@ function toggleHistory() {
           :class="item.esCorrecta ? 'ok' : 'ko'"
         >
           <p><strong>{{ index + 1 }}.</strong> {{ item.preguntaTexto }}</p>
+          <button type="button" class="flag-button" :class="{ flagged: flaggedQuestions[item.preguntaId] }" @click="toggleFlag(item.preguntaId)" :title="flaggedQuestions[item.preguntaId] ? 'Quitar de repaso' : 'Marcar para repasar'">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+          </button>
           <p class="correct-answer">
             Respuesta correcta:
             <strong>{{ item.respuestaCorrecta }} - {{ item.textoRespuestaCorrecta }}</strong>
@@ -406,6 +465,7 @@ function toggleHistory() {
             </p>
           </template>
           <p v-else class="correct-state"><strong>Correcta.</strong></p>
+          <p v-if="flaggedQuestions[item.preguntaId]" class="flagged-note">Marcada para repasar</p>
         </article>
       </section>
     </section>

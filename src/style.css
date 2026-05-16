@@ -87,6 +87,19 @@ input {
   font-size: 0.85rem;
 }
 
+.repaso-btn {
+  min-height: 2rem;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.85rem;
+  background: #e8806a;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.repaso-btn:hover {
+  filter: brightness(1.1);
+}
+
 .home-hero {
   text-align: center;
   padding: 2.5rem 1rem 2rem;
@@ -158,6 +171,48 @@ input {
   font-weight: 800;
   letter-spacing: 0;
   text-transform: uppercase;
+}
+
+.question-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.question-head h2 {
+  flex: 1;
+}
+
+.flag-button {
+  flex-shrink: 0;
+  background: none;
+  color: #c0b8b0;
+  min-height: auto;
+  padding: 0.25rem;
+  line-height: 1;
+  border-radius: 4px;
+  transition: color 0.2s;
+}
+
+.flag-button:hover {
+  color: #e8806a;
+  background: none;
+  filter: none;
+}
+
+.flag-button.flagged {
+  color: #e8806a;
+}
+
+.question-jump-button.flagged {
+  box-shadow: inset 0 0 0 2px #e8806a;
+}
+
+.flagged-note {
+  font-size: 0.8rem;
+  color: #e8806a;
+  font-weight: 700;
+  margin: 0.5rem 0 0;
 }
 
 h1,
@@ -544,6 +599,22 @@ button:disabled {
   border-left: 6px solid #9ca3af;
   border-radius: 8px;
   background: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.review > p {
+  flex: 1 1 100%;
+}
+
+.review > p:first-child {
+  flex: 1 1 calc(100% - 2.5rem);
+}
+
+.review .flag-button {
+  flex-shrink: 0;
 }
 
 .review.ok {
@@ -669,7 +740,8 @@ button:disabled {
     display: none;
   }
 
-  .hero-history-btn {
+  .hero-history-btn,
+  .repaso-btn {
     display: none;
   }
 
