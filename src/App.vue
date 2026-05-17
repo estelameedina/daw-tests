@@ -96,7 +96,8 @@ const canSubmit = computed(() => answeredCount.value > 0);
 const flaggedCount = computed(() => Object.values(flaggedQuestions.value).filter(Boolean).length);
 const flaggedInModule = computed(() => {
   const allQs = (activeModule.value.questionSets || []).flatMap((s) => s.questions);
-  return allQs.filter((q) => flaggedQuestions.value[q.id]).length;
+  const unique = [...new Map(allQs.map((q) => [q.id, q])).values()];
+  return unique.filter((q) => flaggedQuestions.value[q.id]).length;
 });
 const isRepaso = computed(() => repasoMode.value || activeQuestionSetId.value === "__repaso__");
 const isFallos = computed(() => fallosMode.value);
@@ -207,11 +208,11 @@ function submit() {
 function resetQuiz() {
   if (repasoMode.value) {
     const allQs = (activeModule.value.questionSets || []).flatMap((s) => s.questions);
-    const flagged = allQs.filter((q) => flaggedQuestions.value[q.id]);
-    exam.value = buildExam(flagged);
+    const unique = [...new Map(allQs.filter((q) => flaggedQuestions.value[q.id]).map((q) => [q.id, q])).values()];
+    exam.value = buildExam(unique);
   } else if (fallosMode.value) {
-    const failed = activeQuestionSet.value.questions.filter((q) => failedIds.value.has(q.id));
-    exam.value = buildExam(failed);
+    const unique = [...new Map(activeQuestionSet.value.questions.filter((q) => failedIds.value.has(q.id)).map((q) => [q.id, q])).values()];
+    exam.value = buildExam(unique);
   } else {
     exam.value = buildExam(activeQuestionSet.value.questions);
   }
@@ -223,12 +224,12 @@ function resetQuiz() {
 
 function startRepaso() {
   const allQs = (activeModule.value.questionSets || []).flatMap((s) => s.questions);
-  const flagged = allQs.filter((q) => flaggedQuestions.value[q.id]);
-  if (!flagged.length) return;
+  const unique = [...new Map(allQs.filter((q) => flaggedQuestions.value[q.id]).map((q) => [q.id, q])).values()];
+  if (!unique.length) return;
   repasoMode.value = true;
   fallosMode.value = false;
   currentView.value = "test";
-  exam.value = buildExam(flagged);
+  exam.value = buildExam(unique);
   currentQuestionIndex.value = 0;
   answers.value = {};
   startTime.value = Date.now();
@@ -237,8 +238,8 @@ function startRepaso() {
 }
 
 function startFallos() {
-  const failed = activeQuestionSet.value.questions.filter((q) => failedIds.value.has(q.id));
-  if (!failed.length) return;
+  const unique = [...new Map(activeQuestionSet.value.questions.filter((q) => failedIds.value.has(q.id)).map((q) => [q.id, q])).values()];
+  if (!unique.length) return;
   fallosMode.value = true;
   repasoMode.value = false;
   currentView.value = "test";
